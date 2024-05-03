@@ -1,0 +1,116 @@
+//main: ../main.scss
+
+// ------------------------------------------------------------------------------------
+// This file contains all styles related to the hero section of the site/application.
+// ------------------------------------------------------------------------------------
+
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 100px 0;
+    color: #fff;
+    background-color: $brand-color;
+  
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .heading {
+        margin-bottom: 10px;
+        font-family: $font-helveticaneue-bold;
+        font-size: 80px;
+        text-align: center;
+    
+        &-line {
+            position: relative;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+    
+            &:after {
+                content: "";
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                margin: auto;
+                width: 100px;
+                height: 4px;
+                background-color: $secondary-color;
+            }
+        }
+    }
+  
+    .subheading {
+        font-family: $font-helveticaneue-light;
+        font-size: 30px;
+    }
+  
+    .logo {
+        position: absolute;
+        right: -50px;
+        bottom: -70px;
+        // filter: invert(1) brightness(100);
+        width: 60vh;
+        min-width: 500px;
+        transform: rotate(-5deg);
+        opacity: .1;
+        pointer-events: none;
+    }
+  
+    @media (max-width: 1199px) {
+        .heading {
+            font-size: 65px;
+    
+            &-line:after {
+            width: 85px;
+            }
+        }
+    
+        .subheading {
+            font-size: 26px;
+        }
+    }
+  
+    @media (max-width: 991px) {
+        .logo {
+            right: -30px;
+            bottom: -40px;
+            width: 50vh;
+            min-width: 400px;
+            max-width: 400px;
+        }
+    }
+  
+    @media (max-width: 767px) {
+        padding: 50px 0;
+    
+        .heading {
+            font-size: 44px;
+    
+            &-line {
+                margin-bottom: 15px;
+                padding-bottom: 10px;
+    
+                &:after {
+                    width: 60px;
+                    height: 3px;
+                }
+            }
+        }  
+  
+        .subheading {
+            font-size: 18px;
+        }
+    
+        .logo {
+            width: 80vw;
+            min-width: initial;
+            max-width: 260px;
+        }
+    }
+}
