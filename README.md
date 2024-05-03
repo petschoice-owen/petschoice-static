@@ -10,4 +10,4 @@
 * Run localhost environment with `npm run dev`
 
 ## Project Name: Pets Choice
-* [Home](https://petschoice-owen.github.io/petschoice/index.html)
+* [Home](https://petschoice-owen.github.io/petschoice-static/index.html)
