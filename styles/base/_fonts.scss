@@ -7,3 +7,16 @@
 @include font-face($font-helveticaneue, $base-url + 'fonts/', 'helveticaneue', 'helveticaneue');
 @include font-face($font-helveticaneue-bold, $base-url + 'fonts/', 'helveticaneue-bold', 'helveticaneue-bold');
 @include font-face($font-helveticaneue-light, $base-url + 'fonts/', 'helveticaneue-light', 'helveticaneue-light');
+
+@include font-face($font-helveticaneue-light, $base-url + 'fonts/', 'helveticaneue-light', 'helveticaneue-light');
+@include font-face($font-kumbhsans-black, $base-url + 'fonts/', 'kumbhsans-black', 'kumbhsans-black');
+@include font-face($font-kumbhsans-bold, $base-url + 'fonts/', 'kumbhsans-bold', 'kumbhsans-bold');
+@include font-face($font-kumbhsans-light, $base-url + 'fonts/', 'kumbhsans-light', 'kumbhsans-light');
+@include font-face($font-kumbhsans-medium, $base-url + 'fonts/', 'kumbhsans-medium', 'kumbhsans-medium');
+@include font-face($font-kumbhsans-regular, $base-url + 'fonts/', 'kumbhsans-regular', 'kumbhsans-regular');
+@include font-face($font-futura-pt-medium, $base-url + 'fonts/', 'futura-pt-medium', 'futura-pt-medium');
+
+@include font-face($font-frontagecondensed-3d, $base-url + 'fonts/', 'frontagecondensed-3d', 'frontagecondensed-3d');
+@include font-face($font-frontagecondensed-bold, $base-url + 'fonts/', 'frontagecondensed-bold', 'frontagecondensed-bold');
+@include font-face($font-frontagecondensed-bulb, $base-url + 'fonts/', 'frontagecondensed-bulb', 'frontagecondensed-bulb');
+@include font-face($font-frontagecondensed-line, $base-url + 'fonts/', 'frontagecondensed-line', 'frontagecondensed-line');

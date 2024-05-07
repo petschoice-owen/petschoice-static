@@ -9,8 +9,20 @@ $font-helveticaneue: 'HelveticaNeue';
 $font-helveticaneue-bold: 'HelveticaNeue-Bold';
 $font-helveticaneue-light: 'HelveticaNeue-Light';
 
+$font-kumbhsans-black: 'Kumbh Sans Black';
+$font-kumbhsans-bold: 'Kumbh Sans Bold';
+$font-kumbhsans-light: 'Kumbh Sans Light';
+$font-kumbhsans-medium: 'Kumbh Sans Medium';
+$font-kumbhsans-regular: 'Kumbh Sans Regular';
+$font-futura-pt-medium: 'Futura PT Medium';
+$font-frontage-condensed-3d: 'Frontage Condensed 3D';
+$font-frontage-condensed-bold: 'Frontage Condensed Bold';
+$font-frontage-condensed-bulb: 'Frontage Condensed Bulb';
+$font-frontage-condensed-line: 'Frontage Condensed Line';
+
+
 /// @type List
-$text-font-stack: $font-helveticaneue, 'HelveticaNeue', 'HelveticaNeue Bold', 'HelveticaNeue Light', 'Arial', sans-serif !default;
+$text-font-stack: $font-kumbhsans-medium, 'Kumbh Sans Medium', 'Kumbh Sans Bold', 'Kumbh Sans Black', 'Kumbh Sans Light', 'Arial', sans-serif !default;
 
 /// Code (monospace) font family
 /// @type List
