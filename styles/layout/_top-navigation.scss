@@ -12,6 +12,7 @@
     left: 0;
     z-index: 99;
     width: 100%;
+    height: 120px;
     background-color: #fff;
     background-size: cover;
     opacity: 1;
@@ -36,8 +37,8 @@
     }
   
     .logo-link {
-        margin-left: 10px;
-        padding: 10px;
+        margin: 0;
+        padding: 0;
         color: $brand-color;
     
         @include on-event() {
@@ -85,11 +86,10 @@
     }
   
     .navbar {
+        padding: 10px 0;
         transition: .35s ease-in-out all;
         
         .navbar-nav {
-            margin-left: auto;
-    
             a {
                 position: relative;
                 padding: 0;
@@ -169,6 +169,21 @@
                         }
                     }
                 }
+            }
+        }
+
+        .navbar-social {
+            display: flex;
+            margin: 0 0 0 20px;
+            padding: 0;
+            list-style: none;
+
+            .social-item {
+                margin-right: 10px;
+            }
+
+            img {
+                max-width: 40px;
             }
         }
     }
@@ -307,4 +322,8 @@
             max-height: 60px;
         }
     }
+}
+
+main {
+    padding-top: 120px;
 }

@@ -18,8 +18,8 @@ var windowScrolled = () => {
   
 // slider function
 var customSlider = () => {
-    if ($(".custom-slider")) {
-        $('.custom-slider').slick({
+    if ($(".slider-single")) {
+        $('.slider-single').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
             autoplay: true,
@@ -66,12 +66,10 @@ var mainAutoPadding = () => {
 windowScrolled();
   
 $(document).ready(function() {
-    // customSlider();
-    mainAutoPadding();
+    customSlider();
+    // mainAutoPadding();
 });
   
-$(window).resize(function() {
-    mainAutoPadding();
-});
-  
-  
+// $(window).resize(function() {
+//     mainAutoPadding();
+// });

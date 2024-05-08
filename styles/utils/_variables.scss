@@ -15,10 +15,10 @@ $font-kumbhsans-light: 'Kumbh Sans Light';
 $font-kumbhsans-medium: 'Kumbh Sans Medium';
 $font-kumbhsans-regular: 'Kumbh Sans Regular';
 $font-futura-pt-medium: 'Futura PT Medium';
-$font-frontage-condensed-3d: 'Frontage Condensed 3D';
-$font-frontage-condensed-bold: 'Frontage Condensed Bold';
-$font-frontage-condensed-bulb: 'Frontage Condensed Bulb';
-$font-frontage-condensed-line: 'Frontage Condensed Line';
+$font-frontagecondensed-3d: 'Frontage Condensed 3D';
+$font-frontagecondensed-bold: 'Frontage Condensed Bold';
+$font-frontagecondensed-bulb: 'Frontage Condensed Bulb';
+$font-frontagecondensed-line: 'Frontage Condensed Line';
 
 
 /// @type List
@@ -34,8 +34,8 @@ $text-color: #39393a !default;
 
 /// Main brand color
 /// @type Color
-$brand-color: #ef4023 !default;
-$secondary-color: #fcaf17 !default;
+$brand-color: #6d1d47 !default;
+$secondary-color: #ef8511 !default;
 
 /// Light grey
 /// @type Color
@@ -54,3 +54,7 @@ $dark-grey: #444 !default;
 /// @example scss - When using a CDN
 ///   $base-url: 'http://cdn.example.com/assets/';
 $base-url: '../assets/' !default;
+
+// custom colors
+$white: #fff;
+$black: #000;

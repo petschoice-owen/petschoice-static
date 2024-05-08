@@ -11,15 +11,15 @@
     <title>Pets Choice</title>
     <link rel="icon" href="assets/images/favicon.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <!-- <link rel="stylesheet" type="text/css" href="styles/vendors/slick.min.css" /> -->
-    <!-- <link rel="stylesheet" type="text/css" href="styles/vendors/slick-theme.min.css" /> -->
+    <link rel="stylesheet" type="text/css" href="styles/vendors/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="styles/vendors/slick-theme.min.css" />
     <link rel="stylesheet" type="text/css" href="styles/main.min.css" />
 </head>
 <body>
     <div class="top-navigation">
         <div class="wrapper">
             <nav class="navbar navbar-expand-md">
-                <div class="container-fluid">
+                <div class="container">
                     <a href="#" class="logo-link">
                         <img src="./assets/images/logo.png" class="logo-image lazyload" alt="Logo" />
                     </a>
@@ -30,13 +30,16 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav">
-                            <li class="menu-item active">
-                                <a href="#" class="nav-link">Page 1</a>
+                            <li class="menu-item active button-nav">
+                                <a href="#" class="nav-link">Our Company</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#" class="nav-link">Page 2</a>
+                                <a href="#" class="nav-link">Join our Pack</a>
                             </li>
-                            <li class="menu-item menu-dropdown">
+                            <li class="menu-item">
+                                <a href="#" class="nav-link">News</a>
+                            </li>
+                            <!-- <li class="menu-item menu-dropdown">
                                 <a href="#" class="nav-link">Page 3</a>
                                 <ul class="list-unstyled">
                                     <li class="menu-item">
@@ -49,10 +52,12 @@
                                         <a href="#">Page 3 - 3</a>
                                     </li>
                                 </ul>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#" class="nav-link">Page 4</a>
-                            </li>
+                            </li> -->
+                        </ul>
+                        <ul class="navbar-social">
+                            <li class="social-item"><a href="#"><img src="./assets/images/icon-linkedin.png" alt="Social" /></a></li>
+                            <li class="social-item"><a href="#"><img src="./assets/images/icon-linkedin.png" alt="Social" /></a></li>
+                            <li class="social-item"><a href="#"><img src="./assets/images/icon-linkedin.png" alt="Social" /></a></li>
                         </ul>
                     </div>
                 </div>
@@ -60,27 +65,22 @@
         </div>
     </div>
     <main class="page-home">
-        <section class="hero">
-            <div class="container">
-                <div class="wrapper">
-                    <h1 class="heading heading-line">Pets Choice</h1>
-                    <h4 class="subheading">Static Template</h4>
-                </div>
-            </div>
-            <img src="assets/images/image-paw.png" class="logo" alt="" />
-        </section>
-        <!-- <section class="slider">
-            <div class="container">
+        <section class="hero slider">
+            <div class="container-fluid">
                 <div class="custom-slider-wrapper">
-                <div class="custom-slider">
-                    <div class="slide-item" style="background-image: url(./assets/images/hero-slider-1.jpg);"></div>
-                    <div class="slide-item" style="background-image: url(./assets/images/hero-slider-2.jpg);"></div>
-                    <div class="slide-item" style="background-image: url(./assets/images/hero-slider-3.jpg);"></div>
-                    <div class="slide-item" style="background-image: url(./assets/images/hero-slider-4.jpg);"></div>
-                </div>
+                    <div class="custom-slider slider-single">
+                        <div class="slide-item">
+                            <div class="slide-item-wrapper">
+                                <img src="./assets/images/banner-home.png" class="slider-image" alt="Banner Home" />
+                                <div class="banner-heading">
+                                    <h1 class="heading">Inspiring Pets & Owners for Over 135 years.</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section> -->
+        </section>
     </main>
     <div class="footer-section">
         <div class="container">
@@ -98,7 +98,7 @@
     <script src="scripts/vendors/popper.min.js" defer onload="" id="popper_min_js"></script>
     <script src="scripts/vendors/bootstrap.min.js" defer onload="" id="bootstrap_min_js"></script>
     <!-- <script src="scripts/vendors/masonry.pkgd.min.js" defer onload="" id="masonry_pkgd_min_js"></script> -->
-    <!-- <script src="scripts/vendors/slick.min.js" defer onload="" id="slick_min_js"></script> -->
+    <script src="scripts/vendors/slick.min.js" defer onload="" id="slick_min_js"></script>
     <!-- move this to the <head> below the last <link> when integrating to WordPress -->
     <!-- <script src="scripts/vendors/lazyload.min.js"></script>  -->
     <script src="scripts/script.js" defer onload="" id="scripts_js"></script>
