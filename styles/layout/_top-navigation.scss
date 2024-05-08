@@ -90,6 +90,8 @@
         transition: .35s ease-in-out all;
         
         .navbar-nav {
+            margin-left: 30px;
+
             a {
                 position: relative;
                 padding: 0;
@@ -97,7 +99,6 @@
                 font-size: 20px;
                 line-height: 1.8;
                 color: $brand-color;
-                text-transform: uppercase;
                 text-decoration: none;
                 outline: none;
             }
@@ -183,7 +184,7 @@
             }
 
             img {
-                max-width: 40px;
+                max-width: 30px;
             }
         }
     }

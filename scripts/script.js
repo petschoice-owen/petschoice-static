@@ -22,17 +22,16 @@ var customSlider = () => {
         $('.slider-single').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 3000,
-            dots: false,
+            autoplay: false,
+            // autoplaySpeed: 3000,
             infinite: true,
-            speed: 1500,
-            dots: false,
+            speed: 500,
+            dots: true,
             prevArrow: false,
             nextArrow: false,
-            swipe: false,
-            // fade: true,
-            // cssEase: 'linear'
+            // swipe: true,
+            fade: true,
+            cssEase: 'linear'
         });
     }  
 }
