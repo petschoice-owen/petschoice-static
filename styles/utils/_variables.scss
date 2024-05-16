@@ -20,9 +20,8 @@ $font-frontagecondensed-bold: 'Frontage Condensed Bold';
 $font-frontagecondensed-bulb: 'Frontage Condensed Bulb';
 $font-frontagecondensed-line: 'Frontage Condensed Line';
 
-
 /// @type List
-$text-font-stack: $font-kumbhsans-medium, 'Kumbh Sans Medium', 'Kumbh Sans Bold', 'Kumbh Sans Black', 'Kumbh Sans Light', 'Arial', sans-serif !default;
+$text-font-stack: $font-kumbhsans-medium, 'Kumbh Sans Regular', 'Kumbh Sans Bold', 'Kumbh Sans Black', 'Kumbh Sans Light', 'Arial', sans-serif !default;
 
 /// Code (monospace) font family
 /// @type List
@@ -34,8 +33,10 @@ $text-color: #39393a !default;
 
 /// Main brand color
 /// @type Color
-$brand-color: #6d1d47 !default;
-$secondary-color: #ef8511 !default;
+$brand-color: #6D1E46 !default;
+$secondary-color: #FF8300 !default;
+// $highlight-color: #9b3368!default;
+$highlight-color: #b95086!default;
 
 /// Light grey
 /// @type Color

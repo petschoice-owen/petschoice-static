@@ -6,11 +6,11 @@
  
 body {
     color: $text-color;
-    font: normal 125% / 1.4 $text-font-stack;
+    font: normal 125% / 1.3 $text-font-stack;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    line-height: 1.4;
+    line-height: 1.3;
     text-transform: none;
 }
 
@@ -40,7 +40,7 @@ h6 {
 
 p, ul, ol, label, input, textarea {
     font-size: 16px;
-    line-height: 1.2;
+    line-height: 1.3;
 }
 
 ul {
@@ -73,6 +73,36 @@ a {
 
     @include on-event() {
         text-decoration: none;
+    }
+}
+
+.section-heading {
+    font-family: $font-kumbhsans-black;
+    font-size: 50px;
+    color: $brand-color;
+
+    b, strong {
+        color: $secondary-color;
+    }
+}
+
+.section-subheading {
+    font-family: $font-kumbhsans-medium;
+    font-size: 22px;
+    color: $brand-color;
+
+    b, strong {
+        color: $secondary-color;
+    }
+}
+
+@media (max-width: 1199px) {
+    .section-heading {
+        font-size: 40px;
+    }
+
+    .section-subheading {
+        font-size: 20px;
     }
 }
 
@@ -138,5 +168,13 @@ a {
 
     p, ul, ol, label, input, textarea  {
         font-size: 14px;
+    }
+
+    .section-heading {
+        font-size: 32px;
+    }
+
+    .section-subheading {
+        font-size: 18px;
     }
 }

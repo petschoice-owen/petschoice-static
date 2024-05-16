@@ -4,9 +4,9 @@ var $ = jQuery;
 var windowScrolled = () => {
     function checkScroll() {
         if ($(window).scrollTop() >= 50) {
-            $(".top-navigation").addClass("scrolled");
+            $("body").addClass("scrolled");
         } else {
-            $(".top-navigation").removeClass("scrolled");
+            $("body").removeClass("scrolled");
         }
     }
 
@@ -22,20 +22,61 @@ var customSlider = () => {
         $('.slider-single').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
+            // autoplay: true,
             autoplay: false,
-            // autoplaySpeed: 3000,
+            autoplaySpeed: 5000,
+            arrows: true,
             infinite: true,
             speed: 500,
             dots: true,
             prevArrow: false,
             nextArrow: false,
-            // swipe: true,
+            swipe: true,
             fade: true,
-            cssEase: 'linear'
+            cssEase: 'linear',            
+            pauseOnHover: true,
         });
-    }  
+    }
+    if ($(".slider-team")) {
+        $('.slider-team').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            arrows: true,
+            infinite: true,
+            speed: 500,
+            dots: true,
+            // dots: false,
+            prevArrow: false,
+            nextArrow: false,
+            // swipe: true,
+            swipe: false,
+            pauseOnHover: true,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                // {
+                //     breakpoint: 576,
+                //     settings: {
+                //         slidesToShow: 1,
+                //     }
+                // }
+            ]
+        });
+    }
 }
-  
+
 // main element - auto padding-top
 var mainAutoPadding = () => {
     if ($(".top-navigation")) {

@@ -6,12 +6,12 @@
 
 ::selection {
     color: #fff;
-    background: #96302f;
+    background: $highlight-color;
 }
 
 ::-moz-selection {
     color: #fff;
-    background: #96302f;
+    background: $highlight-color;
 }
 
 
@@ -29,8 +29,8 @@ a {
 }
   
 .btn, a {
-    transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
 
     @include on-event {
         outline: 0;
@@ -99,8 +99,13 @@ input[type="text"] {
 
 // container 
 .container {
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
         max-width: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    @media (max-width: 767px) {
         padding-right: 15px;
         padding-left: 15px;
     }
