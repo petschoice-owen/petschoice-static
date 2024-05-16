@@ -11,7 +11,6 @@
         .products {
             display: flex;
             justify-content: space-between;
-            flex-wrap: wrap;
         }
 
         .product {
@@ -388,6 +387,10 @@
             .container {
                 padding-left: 0;
                 padding-right: 0;
+            }
+
+            .products {
+                flex-wrap: wrap;
             }
 
             .product-image {

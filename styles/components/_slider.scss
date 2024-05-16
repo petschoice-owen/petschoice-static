@@ -50,6 +50,7 @@
         position: relative;
         height: calc(100vh - 120px);
         min-height: 550px;
+        overflow: hidden;
     }
 
     .slider-image {
