@@ -48,28 +48,39 @@
 
     .slide-item-wrapper {
         position: relative;
-        height: calc(100vh - 120px);
-        min-height: 550px;
+        // height: calc(100vh - 120px);
+        // min-height: 550px;
         overflow: hidden;
     }
 
     .slider-image {
+        width: 100%;
+        height: 70vh;
+        min-height: 550px;
         object-fit: cover;
         object-position: center;
-        min-height: 100%;
-        max-width: 100%;
+    }
+
+    .slider-image-mobile {
+        display: none;
     }
 
     .banner-heading {
         position: absolute;
         top: 0;
         bottom: 0;
-        left: 59%;
+        // left: 59%;
+        // left: 62%;
+        // width: calc(41% - 20px);
+        // width: 38%;
+        left: auto;
+        right: 0;
         display: flex;
         align-items: center;
-        width: calc(41% - 20px);
-        margin: auto;
+        width: 550px;
         height: fit-content;
+        padding-right: 50px;
+        margin: auto;
     }
 
     .heading-bg {
@@ -78,7 +89,9 @@
 
     .heading {
         font-family: $font-kumbhsans-black;
-        font-size: 4.5vw;
+        // font-size: 4.5vw;
+        // font-size: 2.3vw;
+        font-size: 36px;
         line-height: 1.2;
         color: $white;
         text-transform: uppercase;
@@ -89,7 +102,9 @@
         // video should be 1920px x 840px
         position: relative;
         // height: calc(100vh - 120px);
-        height: 100%;
+        // height: 100%;
+        height: 70vh;
+        min-height: 550px;
         background-color: $black;
 
         iframe {
@@ -157,13 +172,13 @@
     }
 
     .slider-home {
-        .slide-item-wrapper {
-            height: calc(100vh - 100px);
+        .banner-heading {
+            width: 480px;
+            padding-right: 30px;
         }
 
-        .banner-heading {
-            left: 55%;
-            width: calc(45% - 30px);
+        .heading {
+            font-size: 32px;
         }
     }
 
@@ -186,21 +201,14 @@
 
 @media (max-width: 991px) {
     .slider-home {
-        .slide-item-wrapper {
+        .slider-image,
+        .video {
+            height: 55vh;
             min-height: 450px;
         }
 
-        .slider-image {
-            object-position: 30%;
-        }
-
         .banner-heading {
-            left: 50%;
-            width: calc(50% - 20px);
-        }
-
-        .heading {
-            font-size: 4.8vw;
+            width: 370px
         }
     }
 }
@@ -214,26 +222,47 @@
     }
 
     .slider-home {
-        .slide-item-wrapper {
-            height: calc(100vh - 90px);
-            min-height: 250px;
+        // .slide-item-wrapper {
+        //     height: calc(100vh - 90px);
+        //     min-height: 250px;
+        // }
+
+        // .slider-image {
+        //     object-position: 20%;
+        // }
+
+        .banner-heading {
+            width: 100%;
+            height: 100%;
         }
 
         .slider-image {
-            object-position: 20%;
+            width: 100%;
+            height: 100%;
+            min-height: 260px;
+            max-height: 320px;        
         }
 
-        .banner-heading {
-            left: 0;
-            width: 100%;
-            height: 105%;
-            padding: 30px;
+        .slider-image-desktop {
+            display: none;
         }
+
+        .slider-image-mobile {
+            display: block;
+        }
+
+        // .banner-heading {
+        //     left: 0;
+        //     width: 100%;
+        //     height: 105%;
+        //     padding: 30px;
+        // }
 
         .heading {
             position: relative;
             z-index: 2;
-            font-size: 36px;
+            padding: 30px;
+            font-size: 24px;
         }
 
         .heading-bg {
@@ -244,8 +273,9 @@
             display: block;
             width: 100%;
             height: 100%;
-            background: $brand-color;
-            opacity: .7;
+            // background: $brand-color;
+            background: $black;
+            opacity: .5;
         }
 
         .slick-dots {
@@ -264,6 +294,11 @@
 
 @media (max-width: 575px) {
     .slider-home {
+        .slider-image {
+            min-height: 240px;
+            max-height: 240px;
+        }
+
         .banner-heading {
             padding: 15px;
         }
