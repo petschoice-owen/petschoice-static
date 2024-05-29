@@ -1,0 +1,158 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the brands page.
+// -----------------------------------------------------------------------------
+
+.page-brands {
+    .our-brands {
+        position: relative;
+        padding: 100px 0;
+        overflow: hidden;
+
+        .paw-prints {
+            position: absolute;
+            top: -5vw;
+            width: 100%;
+            height: auto;
+            z-index: 1;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .section-heading {
+            text-align: center;
+            text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+        }
+
+        .product-items {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .product-item {
+            width: 33.33%;
+            padding: 30px;
+            margin-top: 30px;
+        }
+
+        .product-link {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            height: 100%;
+            color: $brand-color;
+            text-align: center;
+
+            &:hover {
+                color: $secondary-color;
+
+                .product-image {
+                    transform: scale(1);
+                }
+            }
+        }
+
+        .product-image {
+            width: auto;
+            max-width: 100%;
+            height: auto;
+            max-height: 280px;
+            transform: scale(.98);
+            transition: all .3s ease-in-out;
+        }
+
+        .product-details {
+            padding: 0 20px;
+        }
+
+        .product-name {
+            margin-top: 25px;
+            font-family: $font-kumbhsans-black;
+            font-size: 26px;
+        }
+
+        .product-information {
+            margin-top: 10px;
+            font-family: $font-kumbhsans-bold;
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 1399px) {
+        .our-brands {
+            .paw-prints {
+                top: -3vw;
+            }
+        }
+    }
+
+    @media (max-width: 1199px) {
+        .our-brands {
+            padding: 80px 0;
+
+            .product-image {
+                max-height: 230px;
+            }
+
+            .product-details {
+                padding: 0 10px;
+            }
+        }
+    }
+
+    @media (max-width: 991px) {
+        .our-brands {
+            padding: 50px 0;
+
+            .product-item {
+                padding: 20px;
+            }
+
+            .product-image {
+                max-height: 190px;
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        .our-brands {
+            .paw-prints {
+                top: -1vw;
+            }
+
+            .product-item {
+                width: 50%;
+            }
+
+            .product-name {
+                font-size: 22px;
+            }
+        }
+    }
+
+    @media (max-width: 575px) {
+        .our-brands {
+            .paw-prints {
+                top: -1vw;
+                left: -20vw;
+                width: 160vw;
+            }
+
+            .product-items {
+                margin-top: 0;
+            }
+
+            .product-item {
+                width: 100%;
+                max-width: 360px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}

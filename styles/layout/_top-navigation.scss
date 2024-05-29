@@ -19,6 +19,7 @@ main {
     height: 75px;
     background-color: #fff;
     background-size: cover;
+    border-bottom: 1px solid $brand-color;
     opacity: 1;
     transition: .35s ease-in-out all;
   
@@ -118,7 +119,7 @@ main {
 
                 ul {
                     position: absolute;
-                    top: calc(100% + 3px);
+                    top: 100%;
                     z-index: 10;
                     display: flex;
                     flex-direction: column;
@@ -339,7 +340,7 @@ main {
 
         .navbar {
             .navbar-nav {
-                padding: 20px 20px 0;
+                padding: 15px 20px 0;
                 margin-left: 0;
                 background-color: $brand-color;
 
@@ -353,7 +354,8 @@ main {
 
                     a {
                         height: auto;
-                        padding: 10px 0;
+                        padding: 5px 0;
+                        font-size: 16px;
                         color: $white;
                     }
 
@@ -367,13 +369,15 @@ main {
                         a {
                             position: relative;
                             width: fit-content;
-                            padding: 10px 0;
+                            padding: 5px 0;
+                            font-family: $font-kumbhsans-bold;
+                            font-size: 14px;
                             background-color: transparent;
 
                             &::before {
                                 content: "";
                                 position: absolute;
-                                top: 20px;
+                                top: 14px;
                                 left: -25px;
                                 width: 15px;
                                 height: 2px;
@@ -398,7 +402,7 @@ main {
             }
 
             .navbar-social {
-                padding: 10px 20px 20px;
+                padding: 5px 20px 20px;
                 margin-left: 0;
                 background-color: $brand-color;
             }

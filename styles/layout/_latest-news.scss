@@ -1,0 +1,159 @@
+//main: ../main.scss
+
+// ------------------------------------------------------------------------------------------
+// This file contains all styles related to the latest news section of the site/application.
+// ------------------------------------------------------------------------------------------
+
+.latest-news {
+    padding: 100px 0;
+    background-color: $light-grey;
+
+    .items {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px 0;
+    }
+
+    .item {
+        display: flex;
+        width: 33.33%;
+        height: fit-content;
+        padding: 20px;
+    }
+
+    .item-link {
+        position: relative;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        transition: .3s ease-in-out all;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 5px solid $secondary-color;
+            opacity: 0;
+            transition: .3s ease-in-out all;
+        }
+
+        &:hover {
+            top: -3px;
+            box-shadow: 0 5px 30px rgba(0,0,0,.3);
+
+            &::before {
+                opacity: 1;
+            }
+
+            .item-title {
+                color: $white;
+                background-color: $brand-color;
+            }
+        }
+    }
+
+    .item-image img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 420px;
+    }
+
+    .item-title {
+        display: flex;
+        justify-content: center;
+        padding: 15px 10px;
+        font-family: $font-helveticaneue-bold;
+        font-size: 20px;
+        color: $brand-color;
+        text-align: center;
+        background-color: $secondary-color;
+        transition: .3s ease-in-out all;
+    }
+
+    .button-holder {
+        margin-top: 0;
+    }
+
+    @media (max-width: 1399px) {
+        .item-image {
+            img {
+                height: 350px;
+            }
+        }
+
+        .item-title {
+            font-size: 18px;
+        }
+    }
+
+    @media (max-width: 1199px) {
+        padding: 80px 0;
+
+        .item-image img {
+            height: 280px;
+        }
+
+        .item-title {
+            font-size: 17px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .items {
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+
+        .item {
+            padding: 10px;
+        }
+
+        .item-image img {
+            height: 250px;
+        }
+
+        .item-link::before {
+            border-width: 3px;
+        }
+
+        .item-title {
+            font-size: 15px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        padding: 50px 0;
+
+        .items {
+            flex-direction: column;
+            align-items: center;                
+            padding: 20px 0;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .item {
+            width: 360px;
+            max-width: 100%;
+        }
+
+        .item-image img {
+            height: 300px;
+        }
+
+        .item-title {
+            padding: 15px;
+        }
+    }
+
+    @media (max-width: 575px) {
+        .item-image img {
+            height: 250px;
+        }
+    }
+}

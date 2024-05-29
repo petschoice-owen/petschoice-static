@@ -117,20 +117,31 @@ input[type="text"] {
     padding-right: 0;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    right: initial;
-    bottom: initial;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    opacity: .5;
-    pointer-events: none;
-    transition: .3s cubic-bezier(0.65, 0.05, 0.36, 1) all;
+// overlay
+// .overlay {
+//     position: absolute;
+//     top: 0;
+//     right: initial;
+//     bottom: initial;
+//     left: 0;
+//     z-index: 1;
+//     width: 100%;
+//     height: 100%;
+//     opacity: .5;
+//     pointer-events: none;
+//     transition: .3s cubic-bezier(0.65, 0.05, 0.36, 1) all;
 
-    &-black {    
-        background-color: #000;
-    }
+//     &-black {
+//         background-color: #000;
+//     }
+// }
+
+// bg-brand
+.bg-brand {
+    background-color: $brand-color;
+}
+
+// bg-secondary
+.bg-secondary {
+    background-color: $secondary-color;
 }

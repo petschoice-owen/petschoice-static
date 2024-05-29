@@ -84,6 +84,18 @@ a {
     b, strong {
         color: $secondary-color;
     }
+
+    &-brand {
+        color: $brand-color;
+    }
+
+    &-secondary {
+        color: $secondary-color;
+    }
+
+    &-white {
+        color: $white;
+    }
 }
 
 .section-subheading {
@@ -93,6 +105,18 @@ a {
 
     b, strong {
         color: $secondary-color;
+    }
+
+    &-brand {
+        color: $brand-color;
+    }
+
+    &-secondary {
+        color: $secondary-color;
+    }
+
+    &-white {
+        color: $white;
     }
 }
 

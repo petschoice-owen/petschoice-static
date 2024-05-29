@@ -28,8 +28,12 @@
 @import
     'layout/top-navigation',
     'layout/footer',
-    'layout/hero';
+    'layout/hero',
+    'layout/join',
+    'layout/latest-news',
+    'layout/banners';
 
 // 6. Page-specific styles
 @import
-    'pages/home';
+    'pages/home',
+    'pages/brands';

@@ -77,6 +77,129 @@ var customSlider = () => {
     }
 }
 
+// resizing slider function
+var slickEthos = () => {
+    $('.slider-ethos').not('.slick-initialized').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        // autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: true,
+        infinite: true,
+        speed: 500,
+        dots: true,
+        prevArrow: false,
+        nextArrow: false,
+        swipe: false,
+        pauseOnHover: true,
+        responsive: [
+            {
+                breakpoint: 9999,
+                settings: "unslick"
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    autoplay: false,
+                    swipe: true,
+                    dots: true,
+                }
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: false,
+                    swipe: true,
+                    dots: true,
+                }
+            },
+        ]
+    });    
+    // if ($(".slider-ethos")) {
+    //     $('.slider-ethos').slick({
+    //         slidesToShow: 2,
+    //         slidesToScroll: 1,
+    //         autoplay: true,
+    //         autoplaySpeed: 3000,
+    //         arrows: true,
+    //         infinite: true,
+    //         speed: 500,
+    //         dots: true,
+    //         // dots: false,
+    //         prevArrow: false,
+    //         nextArrow: false,
+    //         // swipe: true,
+    //         swipe: false,
+    //         pauseOnHover: true,
+    //         responsive: [
+    //             {
+    //                 breakpoint: 9999,
+    //                 settings: "unslick"
+    //             },
+    //             {
+    //                 breakpoint: 767,
+    //                 settings: {
+    //                     slidesToShow: 2,
+    //                     slidesToScroll: 1,
+    //                     swipe: true,
+    //                     dots: true,
+    //                 }
+    //             },
+    //             {
+    //                 breakpoint: 575,
+    //                 settings: {
+    //                     slidesToShow: 1,
+    //                     slidesToScroll: 1,
+    //                     swipe: true,
+    //                     dots: true,
+    //                 }
+    //             },
+    //         ]
+    //     });
+    // }
+}
+
+var slickNews = () => {
+    $('.slider-news').not('.slick-initialized').slick({
+        // autoplay: true,
+        autoplay: false,
+        autoplaySpeed: 3000,
+        infinite: false,
+        speed: 500,
+        dots: true,
+        pauseOnHover: true,
+        responsive: [
+            {
+                breakpoint: 9999,
+                settings: "unslick"
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    variableWidth: false,
+                    centerMode: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    dots: true,
+                    arrows: false,
+                    // arrows: true,
+                    // prevArrow: '<button type="button" class="slick-prev"></button>',
+                    // nextArrow: '<button type="button" class="slick-next"></button>',
+                    draggable: true,
+                    swipe: true,
+                    touchMove: true,
+                    fade: true,
+                }
+            },
+        ]
+    });
+}
+
 // main element - auto padding-top
 var mainAutoPadding = () => {
     if ($(".top-navigation")) {
@@ -107,9 +230,15 @@ windowScrolled();
   
 $(document).ready(function() {
     customSlider();
-    // mainAutoPadding();
+    slickEthos();
+    slickNews();
 });
   
-// $(window).resize(function() {
-//     mainAutoPadding();
-// });
+$(window).resize(function() {
+    if (!$('.slider-ethos').hasClass('slick-initialized')) {
+        slickEthos();
+    }
+    if (!$('.slider-news').hasClass('slick-initialized')) {
+        slickNews();
+    }
+});
