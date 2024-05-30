@@ -26,8 +26,8 @@
         &:nth-child(3n + 1) {
             .wrapper-image {
                 .image-mask {
-                    -webkit-mask-image: url(../../assets/images/blob-1.png);
-                    mask-image: url(../../assets/images/blob-1.png);
+                    -webkit-mask-image: url(../assets/images/blob-1.png);
+                    mask-image: url(../assets/images/blob-1.png);
                 }
             }
         }
@@ -37,8 +37,8 @@
                 order: 1;
 
                 .image-mask {
-                    -webkit-mask-image: url(../../assets/images/blob-2.png);
-                    mask-image: url(../../assets/images/blob-2.png);
+                    -webkit-mask-image: url(../assets/images/blob-2.png);
+                    mask-image: url(../assets/images/blob-2.png);
                 }
             }
 
@@ -52,8 +52,8 @@
         &:nth-child(3n + 3) {
             .wrapper-image {
                 .image-mask {
-                    -webkit-mask-image: url(../../assets/images/blob-3.png);
-                    mask-image: url(../../assets/images/blob-3.png);
+                    -webkit-mask-image: url(../assets/images/blob-3.png);
+                    mask-image: url(../assets/images/blob-3.png);
                 }
             }
         }
