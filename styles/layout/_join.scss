@@ -7,6 +7,12 @@
 .join {
     padding: 100px 0;
 
+    &-pack {
+        .section-subheading {
+            max-width: 850px;
+        }
+    }
+
     .section-subheading {
         margin: 15px auto 0;
     }
@@ -21,6 +27,14 @@
 
     @media (max-width: 1199px) {
         padding: 80px 0;
+    }
+
+    @media (max-width: 991) {
+        &-pack {
+            .section-subheading {
+                max-width: 750px;
+            }
+        }
     }
 
     @media (max-width: 767px) {

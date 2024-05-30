@@ -1,0 +1,337 @@
+//main: ../main.scss
+
+// ----------------------------------------------------------------------------------------
+// This file contains all styles related to the statistics section of the site/application.
+// ----------------------------------------------------------------------------------------
+
+.statistics {
+    padding: 100px 0;
+
+    .stats {
+        display: flex;
+
+        & + .stats {
+            margin-top: 15px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            line-height: 1.2;
+            font-family: $font-kumbhsans-black;
+            transition: .3s ease-in-out all;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-size: 50px;
+        }
+
+        h6 {
+            font-size: 26px;
+        }
+
+        p {
+            letter-spacing: -.5px;
+            line-height: 1.2;
+            font-size: 22px;
+            font-family: $font-kumbhsans-bold;
+            transition: .3s ease-in-out all;
+        }
+
+        .text-small {
+            &-white {
+                color: $white;
+            }
+            &-purple {
+                color: $brand-color;
+            }
+            &-orange {
+                color: $secondary-color;
+            }
+        }
+
+        .text-big {
+            &-white {
+                h1, h2, h3, h4, h5 {
+                    color: $white;  
+                } 
+            }
+            &-purple {
+                h1, h2, h3, h4, h5 {
+                    color: $brand-color;
+                } 
+            }
+            &-orange {
+                h1, h2, h3, h4, h5 {
+                    color: $secondary-color;
+                } 
+            }
+        }
+    }
+
+    .stats-heading {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 22%;
+        padding: 15px 25px;
+        text-align: right;
+        
+        .stats-icon {
+            width: auto;
+            height: auto;
+            max-height: 100px;
+            transition: .3s ease-in-out all;
+        }
+
+        h6 {
+            padding-top: 10px;
+            margin-top: auto;
+            color: $brand-color;
+        }
+    }
+    
+    .stats-content {
+        display: flex;
+        width: 78%;
+
+        &-item {
+            position: relative;
+            display: flex;
+            width: 33.33%;
+        }
+
+        .stats-details {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+    }
+
+    .stats-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background-color: $white;
+    }
+
+    .overlay-opacity {
+        &-0 {
+            opacity: 0;
+        }
+        &-10 {
+            opacity: .1;
+        }
+        &-20 {
+            opacity: .2;
+        }
+        &-30 {
+            opacity: .3;
+        }
+        &-40 {
+            opacity: .4;
+        }
+        &-50 {
+            opacity: .5;
+        }
+        &-60 {
+            opacity: .6;
+        }
+        &-70 {
+            opacity: .7;
+        }
+        &-80 {
+            opacity: .8;
+        }
+        &-90 {
+            opacity: .9;
+        }
+        &-100 {
+            opacity: 1;
+        }
+    }
+
+    @media (max-width: 1399px) {
+        padding: 80px 0;
+
+        .stats {
+            h1, h2, h3, h4, h5 {
+                font-size: 40px;
+            }
+
+            h6 {
+                font-size: 22px;
+            }
+
+            p {
+                letter-spacing: -.2px;
+                font-size: 18px;
+            }
+        }
+
+        .stats-heading {
+            .stats-icon {
+                max-height: 90px;
+            }
+        }
+    }
+
+    @media (max-width: 1199px) {
+        // .stats {
+        //     h1, h2, h3, h4, h5 {
+        //         font-size: 50px;
+        //     }
+
+        //     h6 {
+        //         font-size: 22px;
+        //     }
+
+        //     p {
+        //         font-size: 18px;
+        //     }
+        // }
+
+        // .stats-heading {
+        //     .stats-icon {
+        //         max-height: 80px;
+        //     }
+        // }
+    }
+
+    @media (max-width: 991px) {
+        padding: 50px 0;
+        
+        .stats {
+            flex-direction: column;
+
+            & + .stats {
+                margin-top: 30px;
+            }
+        }
+
+        .stats-heading {
+            width: 100%;
+            padding: 15px;
+            align-items: flex-start;
+            text-align: left;
+
+            .stats-icon {
+                max-height: 70px;
+            }
+
+            h6 {
+                padding-top: 10px;
+            }
+
+            br {
+                display: none;
+            }
+        }
+
+        .stats-content {
+            flex-wrap: wrap;
+            width: 100%;
+
+            &-item {
+                width: 50%;
+
+                &:nth-child(1) {
+                    border-right: 1px solid $white;
+
+                    .stats-overlay {
+                        opacity: .3;
+                    }
+                }
+
+                &:nth-child(2) {
+                    border-left: 1px solid $white;
+
+                    .stats-overlay {
+                        opacity: .7;
+                    }
+                }
+
+                &:nth-child(3) {
+                    width: 100%;
+                    border-top: 2px solid $white;
+
+                    .stats-overlay {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        .stats {
+            h1, h2, h3, h4, h5 {
+                font-size: 32px;
+            }
+
+            h6 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 16px;
+                font-family: $font-kumbhsans-medium;
+            }
+        }
+
+        .stats-heading {
+            padding: 15px 10px;
+
+            .stats-icon {
+                max-height: 60px;
+            }
+        }
+    }
+
+    @media (max-width: 575px) {
+        .stats-content {
+            &-item {
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3) {
+                    position: relative;
+                    width: 100%;
+                    border: 0;
+                }
+                &:not(:first-child) {
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 1px;
+                        background-color: $white;
+                    }
+                }
+
+                &:not(:last-child) {
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 1px;
+                        background-color: $white;
+                    }
+                }
+                // border-top: 1px solid $white;
+            }
+        }
+    }
+}

@@ -1,0 +1,205 @@
+//main: ../main.scss
+
+// ---------------------------------------------------------------------------------------
+// This file contains all styles related to the alternate section of the site/application.
+// ---------------------------------------------------------------------------------------
+
+.alternate {
+    .alternate-item {
+        padding: 80px 0;
+
+        &-purple {
+            color: $white;
+            background-color: $brand-color;
+        }
+
+        &-grey {
+            color: $brand-color;
+            background-color: $light-grey;
+        }
+
+        &-white {
+            color: $brand-color;
+            background-color: $white;
+        }
+
+        &:nth-child(3n + 1) {
+            .wrapper-image {
+                .image-mask {
+                    -webkit-mask-image: url(../../assets/images/blob-1.png);
+                    mask-image: url(../../assets/images/blob-1.png);
+                }
+            }
+        }
+
+        &:nth-child(3n + 2) {
+            .wrapper-image {
+                order: 1;
+
+                .image-mask {
+                    -webkit-mask-image: url(../../assets/images/blob-2.png);
+                    mask-image: url(../../assets/images/blob-2.png);
+                }
+            }
+
+            .wrapper-text {
+                order: 2;
+                padding-left: 50px;
+                padding-right: 0;
+            }
+        }
+
+        &:nth-child(3n + 3) {
+            .wrapper-image {
+                .image-mask {
+                    -webkit-mask-image: url(../../assets/images/blob-3.png);
+                    mask-image: url(../../assets/images/blob-3.png);
+                }
+            }
+        }
+    }
+
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .wrapper-text {
+        width: 60%;
+        padding-right: 50px;
+
+        .heading {
+            font-family: $font-kumbhsans-black;
+            color: $secondary-color;
+        }
+
+        .content {
+            margin-top: 30px;
+            font-size: 18px;
+
+            p, li {
+                font-size: 18px;
+                line-height: 1.6;
+            }
+
+            p + p {
+                margin-top: 20px;
+            }
+
+            a {
+                color: $secondary-color;
+            }
+
+            .button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: fit-content;
+                padding: 12px 30px;
+                margin-top: 40px;
+                font-family: $font-kumbhsans-bold;
+                font-size: 18px;
+                color: $secondary-color;
+                background-color: transparent;
+                border: 2px solid $secondary-color;
+                border-radius: 50px;
+
+                &:hover {
+                    color: $white;
+                    background-color: $secondary-color;
+                    border-color: $secondary-color;
+                }
+            }
+        }
+    }
+
+    .wrapper-image {
+        width: 40%;
+
+        .image-mask {
+            mask-size: 100% 100%;
+        }
+
+        .section-image {
+            width: auto;
+            max-width: 100%;
+            height: auto;
+            max-height: 100%;
+        }
+    }
+
+    @media (max-width: 1199px) {
+        .alternate-item:nth-child(3n + 2) {
+            .wrapper-text {
+                padding-left: 30px;
+                padding-right: 0;
+            }
+        }
+
+        .wrapper-text {
+            width: 55%;
+            padding-right: 30px;
+        }
+
+        .wrapper-image {
+            width: 45%;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .alternate-item {
+            .wrapper {
+                .wrapper-text,
+                .wrapper-image {
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+        }
+
+        .wrapper-image {
+            order: 1;
+            max-width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50px;
+        }
+
+        .wrapper-text {
+            order: 2;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .alternate-item {
+            padding: 60px 0;
+        }
+
+        .wrapper-image {
+            margin-bottom: 40px;
+        }
+
+        .wrapper-text {
+            .content {
+                margin-top: 20px;
+
+                p, li {
+                    font-size: 15px;
+                }
+
+                .button {
+                    padding: 10px 27px;
+                    margin-top: 30px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 575px) {
+        .wrapper-image {
+            max-width: calc(100% - 20px);
+        }
+    }
+}
