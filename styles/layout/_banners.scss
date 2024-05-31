@@ -116,6 +116,28 @@
     }
 }
 
+.banner-single-brand {
+    .banner-image {
+        width: 100%;
+        object-fit: cover;
+        max-height: 500px;
+    }
+
+    .banner-image-mobile {
+        display: none;
+    }
+
+    @media (max-width: 767px) {
+        .banner-image-desktop {
+            display: none;
+        }
+
+        .banner-image-mobile {
+            display: block;
+        }
+    }
+}
+
 .banner-about {
     position: relative;
 

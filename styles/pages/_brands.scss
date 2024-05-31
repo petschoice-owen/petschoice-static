@@ -13,9 +13,10 @@
         .paw-prints {
             position: absolute;
             top: -5vw;
+            z-index: 1;
             width: 100%;
             height: auto;
-            z-index: 1;
+            opacity: .3;
         }
 
         .container {
