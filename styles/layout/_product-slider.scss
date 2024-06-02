@@ -1,0 +1,92 @@
+//main: ../main.scss
+
+// --------------------------------------------------------------------------------------------
+// This file contains all styles related to the product slider section of the site/application.
+// --------------------------------------------------------------------------------------------
+
+.brand-products {
+    padding: 80px 0;
+
+    .section-heading + .section-subheading {
+        margin-top: 15px;
+    }
+
+    .section-heading + .custom-slider-wrapper,
+    .section-subheading + .custom-slider-wrapper {
+        margin-top: 50px;
+    }
+
+    .button-holder {
+        margin-top: 40px;
+
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: fit-content;
+            padding: 12px 30px;
+            font-family: $font-kumbhsans-bold;
+            font-size: 18px;
+            color: $secondary-color;
+            background-color: transparent;
+            border: 2px solid $secondary-color;
+            border-radius: 50px;
+
+            &:hover {
+                color: $white;
+                background-color: $secondary-color;
+                border-color: $secondary-color;
+            }
+        }
+
+        .button-purple {
+            color: $brand-color;
+            background-color: transparent;
+            border: 2px solid $brand-color;
+
+            &:hover {
+                color: $white;
+                background-color: $secondary-color;
+                border-color: $secondary-color;
+            }
+        }
+
+        .button-orange {
+            color: $secondary-color;
+            background-color: transparent;
+            border: 2px solid $secondary-color;
+
+            &:hover {
+                color: $white;
+                background-color: $secondary-color;
+                border-color: $secondary-color;
+            }
+        }
+    }
+
+    @media (max-width: 1199px) {
+        .section-heading + .custom-slider-wrapper,
+        .section-subheading + .custom-slider-wrapper {
+            margin-top: 40px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .section-heading + .custom-slider-wrapper,
+        .section-subheading + .custom-slider-wrapper {
+            margin-top: 30px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        padding: 50px 0;
+
+        .button-holder {
+            .button {
+                padding: 10px 27px;
+                margin-top: 30px;
+                font-size: 16px;
+            }
+        }
+    }
+}

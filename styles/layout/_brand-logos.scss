@@ -1,0 +1,36 @@
+//main: ../main.scss
+
+// --------------------------------------------------------------------------------------------
+// This file contains all styles related to the brand logos section of the site/application.
+// --------------------------------------------------------------------------------------------
+
+.brand-logos {
+    padding: 80px 0;
+
+    .section-heading + .section-subheading {
+        margin-top: 15px;
+    }
+
+    .section-heading + .custom-slider-wrapper,
+    .section-subheading + .custom-slider-wrapper {
+        margin-top: 50px;
+    }
+
+    @media (max-width: 1199px) {
+        .section-heading + .custom-slider-wrapper,
+        .section-subheading + .custom-slider-wrapper {
+            margin-top: 40px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .section-heading + .custom-slider-wrapper,
+        .section-subheading + .custom-slider-wrapper {
+            margin-top: 30px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        padding: 50px 0;
+    }
+}

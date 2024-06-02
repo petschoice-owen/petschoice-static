@@ -136,12 +136,49 @@ input[type="text"] {
 //     }
 // }
 
-// bg-brand
-.bg-brand {
+// bg-purple
+.bg-purple {
     background-color: $brand-color;
 }
-
-// bg-secondary
-.bg-secondary {
+// bg-orange
+.bg-orange {
     background-color: $secondary-color;
+}
+// bg-grey
+.bg-grey {
+    background-color: $light-grey;
+}
+// bg-white
+.bg-white {
+    background-color: $white;
+}
+
+// borders
+.border-purple {
+    border-color: $brand-color;
+}
+.border-orange {
+    border-color: $secondary-color;
+}
+.border-grey {
+    border-color: $light-grey;
+}
+.border-white {
+    border-color: $white;
+}
+.border-top-1 {
+    border-top-width: 1px;
+    border-top-style: solid;
+}
+.border-top-2 {
+    border-top-width: 2px;
+    border-top-style: solid;
+}
+.border-bottom-1 {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+.border-bottom-2 {
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
 }

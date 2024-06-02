@@ -75,6 +75,98 @@ var customSlider = () => {
             ]
         });
     }
+    if ($(".slider-brand-products")) {
+        $('.slider-brand-products').slick({
+            slidesToShow: 5,
+            // slidesToScroll: 1,
+            slidesToScroll: 5,
+            // autoplay: true,
+            autoplay: false,
+            autoplaySpeed: 3000,
+            arrows: true,
+            infinite: true,
+            speed: 500,
+            dots: true,
+            prevArrow: false,
+            nextArrow: false,
+            swipe: true,
+            // swipe: false,
+            pauseOnHover: true,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 4,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                    }
+                },
+                {
+                    breakpoint: 441,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                    }
+                },
+                // {
+                //     breakpoint: 576,
+                //     settings: {
+                //         slidesToShow: 1,
+                //     }
+                // }
+            ]
+        });
+    }
+    if ($(".slider-brand-logos")) {
+        $('.slider-brand-logos').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: true,
+            // autoplay: false,
+            autoplaySpeed: 2000,
+            arrows: true,
+            infinite: true,
+            speed: 700,
+            dots: false,
+            prevArrow: false,
+            nextArrow: false,
+            swipe: true,
+            pauseOnHover: true,
+            draggable: true,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 5,
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 4,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 441,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+            ]
+        });
+    }
 }
 
 // resizing slider function

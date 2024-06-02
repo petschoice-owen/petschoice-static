@@ -34,10 +34,15 @@
     'layout/banners',
     'layout/statistics',
     'layout/locations',
-    'layout/alternate';
+    'layout/alternate',
+    'layout/product-slider',
+    'layout/social-section',
+    'layout/brand-logos';
 
 // 6. Page-specific styles
 @import
     'pages/home',
     'pages/brands',
-    'pages/single-brand';
+    'pages/single-brand',
+    'pages/news',
+    'pages/our-people';

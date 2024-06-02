@@ -1,0 +1,84 @@
+//main: ../main.scss
+
+// ----------------------------------------------------------------------------------------
+// This file contains all styles related to the social section of the site/application.
+// ----------------------------------------------------------------------------------------
+
+.social-section {
+    padding: 80px 0;
+
+    .section-heading + .section-subheading {
+        margin-top: 15px;
+    }
+
+    .socials {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .social-item {
+        margin: 0 7px;
+    }
+
+    .link {
+        display: flex;
+        margin-top: 0;
+        background-color: transparent;
+        border-radius: 7px;
+        transition: .2s ease-in-out all;
+
+        &:hover {
+            margin-top: -5px;
+            background-color: $white;
+        }
+    }
+
+    .icon {
+        width: auto;
+        max-width: 60px;
+        height: auto;
+        max-height: 60px;
+    }
+
+    &.bg-purple {
+        .section-heading,
+        .section-subheading {
+            color: $white;
+        }
+    }
+
+    &.bg-orange {
+        .section-heading,
+        .section-subheading {
+            color: $white;
+
+            b, strong {
+                color: $brand-color;
+            }
+        }
+    }
+
+    @media (max-width: 1199px) {
+        .icon {
+            max-width: 50px;
+            max-height: 50px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .icon {
+            max-width: 40px;
+            max-height: 40px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        padding: 50px 0;
+
+        .icon {
+            max-width: 35px;
+            max-height: 35px;
+        }
+    }
+}
