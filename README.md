@@ -14,3 +14,4 @@
 * [Brands Page](https://petschoice-owen.github.io/petschoice-static/brands.html)
 * [Single Brand Page](https://petschoice-owen.github.io/petschoice-static/single-brand.html)
 * [About Us Page](https://petschoice-owen.github.io/petschoice-static/about-us.html)
+* [News Page](https://petschoice-owen.github.io/petschoice-static/about-us.html)

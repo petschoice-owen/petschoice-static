@@ -76,6 +76,10 @@
     @media (max-width: 767px) {
         padding: 50px 0;
 
+        .link {
+            background-color: $white;
+        }
+
         .icon {
             max-width: 35px;
             max-height: 35px;
