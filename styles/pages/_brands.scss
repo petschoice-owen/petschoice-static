@@ -16,7 +16,7 @@
             z-index: 1;
             width: 100%;
             height: auto;
-            opacity: .3;
+            opacity: .1;
         }
 
         .container {
@@ -35,7 +35,6 @@
         .product-items {
             display: flex;
             flex-wrap: wrap;
-            margin-top: 30px;
         }
 
         .product-item {
@@ -145,10 +144,6 @@
                 top: -1vw;
                 left: -20vw;
                 width: 160vw;
-            }
-
-            .product-items {
-                margin-top: 0;
             }
 
             .product-item {

@@ -1,0 +1,183 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the people page.
+// -----------------------------------------------------------------------------
+
+.page-people {
+    .heading {
+        padding: 100px 0;
+    }
+
+    .section-subheading {
+        width: 950px;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section-heading + .section-subheading {
+        margin-top: 20px;
+    }
+    
+    .section-subheading + .section-subheading {
+        margin-top: 15px;
+    }
+
+    .section-heading + .custom-slider-wrapper,
+    .section-subheading + .custom-slider-wrapper,
+    .section-heading + .items,
+    .section-subheading + .items {
+        margin-top: 20px;
+    }
+
+    .testimonials {
+        .testimonial {
+            padding: 70px 0;
+    
+            &:nth-child(3n + 1) {
+                color: $brand-color;
+                background-color: $light-grey;
+
+                .wrapper-image {
+                    .blob {
+                        background-image: url(../assets/images/blob-testimonial-1.png);
+                    }
+                }
+            }
+    
+            &:nth-child(3n + 2) {
+                color: $white;
+                background-color: $brand-color;
+
+                .wrapper-image {
+                    order: 1;
+
+                    .blob {
+                        background-image: url(../assets/images/blob-testimonial-2.png);
+                        filter: brightness(0) invert(1);
+                    }
+                }
+    
+                .wrapper-text {
+                    order: 2;
+                    padding-left: 50px;
+                    padding-right: 0;
+                }
+            }
+    
+            &:nth-child(3n + 3) {
+                color: $brand-color;
+                background-color: $white;
+
+                .wrapper-image {
+                    .blob {
+                        background-image: url(../assets/images/blob-testimonial-3.png);
+                    }
+                }
+            }
+
+            .wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+        
+            .wrapper-text {
+                width: 60%;
+                padding-right: 50px;
+        
+                .heading {
+                    font-family: $font-kumbhsans-black;
+                    color: $secondary-color;
+                }
+        
+                .content {
+                    margin-top: 30px;
+                    font-size: 18px;
+        
+                    p, li {
+                        font-size: 18px;
+                        line-height: 1.6;
+                    }
+        
+                    p + p {
+                        margin-top: 20px;
+                    }
+        
+                    a {
+                        color: $secondary-color;
+                    }
+        
+                    .button {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: fit-content;
+                        padding: 12px 30px;
+                        margin-top: 40px;
+                        font-family: $font-kumbhsans-bold;
+                        font-size: 18px;
+                        color: $secondary-color;
+                        background-color: transparent;
+                        border: 2px solid $secondary-color;
+                        border-radius: 50px;
+        
+                        &:hover {
+                            color: $white;
+                            background-color: $secondary-color;
+                            border-color: $secondary-color;
+                        }
+                    }
+                }
+            }
+        
+            .wrapper-image {
+                width: 40%;
+        
+                .image-holder {
+                    position: relative;
+                }
+
+                .blob {
+                    content: "";
+                    position: absolute;
+                    bottom: -10%;
+                    left: 0;
+                    right: 0;
+                    z-index: 1;
+                    width: 80%;
+                    height: 100%;
+                    margin: auto;
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+        
+                img {
+                    position: relative;
+                    z-index: 2;
+                    width: auto;
+                    max-width: 100%;
+                    height: auto;
+                    max-height: 100%;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1199px) {
+        .section-subheading {
+            width: 750px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .latest-news {
+            .items,
+            .button-holder {
+                padding-bottom: 30px;
+            }
+        }
+    }
+}
