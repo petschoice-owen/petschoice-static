@@ -7,6 +7,10 @@
 .join {
     padding: 100px 0;
 
+    .section-heading + .section-subheading {
+        margin-top: 25px;
+    }
+
     .section-subheading {
         max-width: 80%;
         margin: 15px auto 0;
@@ -26,6 +30,10 @@
 
     @media (max-width: 767px) {
         padding: 50px 0;
+
+        .section-heading + .section-subheading {
+            margin-top: 20px;
+        }
 
         .section-subheading {
             max-width: 90%;

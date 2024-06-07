@@ -32,8 +32,13 @@
     }
 
     .testimonials {
+        border-top: 1px solid $brand-color;
+        border-bottom: 1px solid $brand-color;
+
         .testimonial {
             padding: 80px 0 70px;
+            border-top: 1px solid $brand-color;
+            border-bottom: 1px solid $brand-color;
     
             &:nth-child(3n + 1) {
                 color: $brand-color;
@@ -254,6 +259,10 @@
 
     @media (max-width: 991px) {
         .testimonials {
+            .wrapper {
+                padding: 0 20px;
+            }
+
             .testimonial {
                 &:nth-child(3n+2) {
                     .wrapper-text {
@@ -306,6 +315,12 @@
     }
 
     @media (max-width: 767px) {
-        
+        .testimonials {
+            border-width: 2px;
+
+            .testimonial {
+                border: none;
+            }
+        }
     }
 }

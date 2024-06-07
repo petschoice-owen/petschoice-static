@@ -190,7 +190,7 @@ var slickEthos = () => {
                 settings: "unslick"
             },
             {
-                breakpoint: 767,
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
@@ -200,7 +200,7 @@ var slickEthos = () => {
                 }
             },
             {
-                breakpoint: 575,
+                breakpoint: 576,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
@@ -269,7 +269,7 @@ var slickNews = () => {
                 settings: "unslick"
             },
             {
-                breakpoint: 767,
+                breakpoint: 768,
                 settings: {
                     variableWidth: false,
                     centerMode: true,
@@ -305,7 +305,7 @@ var slickLocations = () => {
                 settings: "unslick"
             },
             {
-                breakpoint: 767,
+                breakpoint: 768,
                 settings: {
                     variableWidth: false,
                     centerMode: true,
@@ -315,6 +315,44 @@ var slickLocations = () => {
                     dots: true,
                     arrows: false,
                     // arrows: true,
+                    // prevArrow: '<button type="button" class="slick-prev"></button>',
+                    // nextArrow: '<button type="button" class="slick-next"></button>',
+                    draggable: true,
+                    swipe: true,
+                    touchMove: true,
+                    fade: true,
+                }
+            },
+        ]
+    });
+}
+var slickTestimonials = () => {
+    $('.slider-testimonials').not('.slick-initialized').slick({
+        // autoplay: true,
+        autoplay: false,
+        autoplaySpeed: 3000,
+        speed: 500,
+        pauseOnHover: true,
+        responsive: [
+            {
+                breakpoint: 9999,
+                settings: "unslick"
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    variableWidth: false,
+                    centerMode: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    // autoplay: true,
+                    autoplay: false,
+                    infinite: true,
+                    adaptiveHeight: true,
+                    // dots: true,
+                    dots: false,
+                    // arrows: false,
+                    arrows: true,
                     // prevArrow: '<button type="button" class="slick-prev"></button>',
                     // nextArrow: '<button type="button" class="slick-next"></button>',
                     draggable: true,
@@ -360,6 +398,7 @@ $(document).ready(function() {
     slickEthos();
     slickNews();
     slickLocations();
+    slickTestimonials();
 });
   
 $(window).resize(function() {
@@ -371,5 +410,8 @@ $(window).resize(function() {
     }
     if (!$('.slider-locations').hasClass('slick-initialized')) {
         slickLocations();
-    }    
+    }
+    if (!$('.slider-testimonials').hasClass('slick-initialized')) {
+        slickTestimonials();
+    }
 });
