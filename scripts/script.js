@@ -15,7 +15,7 @@ var windowScrolled = () => {
         $(window).scroll(checkScroll);
     });
 }
-  
+
 // slider function
 var customSlider = () => {
     if ($(".slider-single")) {
@@ -78,19 +78,16 @@ var customSlider = () => {
     if ($(".slider-brand-products")) {
         $('.slider-brand-products').slick({
             slidesToShow: 5,
-            // slidesToScroll: 1,
             slidesToScroll: 5,
-            // autoplay: true,
-            autoplay: false,
+            autoplay: true,
             autoplaySpeed: 3000,
             arrows: true,
             infinite: true,
-            speed: 500,
+            speed: 800,
             dots: true,
             prevArrow: false,
             nextArrow: false,
             swipe: true,
-            // swipe: false,
             pauseOnHover: true,
             responsive: [
                 {
@@ -389,10 +386,10 @@ var mainAutoPadding = () => {
         }
     }
 }
-  
+
 // initialize the functions
 windowScrolled();
-  
+
 $(document).ready(function() {
     customSlider();
     slickEthos();
@@ -400,7 +397,7 @@ $(document).ready(function() {
     slickLocations();
     slickTestimonials();
 });
-  
+
 $(window).resize(function() {
     if (!$('.slider-ethos').hasClass('slick-initialized')) {
         slickEthos();
