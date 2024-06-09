@@ -34,8 +34,6 @@
 
         &:nth-child(3n + 2) {
             .wrapper-image {
-                order: 1;
-
                 .image-mask {
                     -webkit-mask-image: url(../assets/images/blob-2.png);
                     mask-image: url(../assets/images/blob-2.png);
@@ -55,6 +53,18 @@
                     -webkit-mask-image: url(../assets/images/blob-3.png);
                     mask-image: url(../assets/images/blob-3.png);
                 }
+            }
+        }
+
+        &:nth-child(even) {
+            .wrapper-image {
+                order: 1;
+            }
+
+            .wrapper-text {
+                order: 2;
+                padding-left: 50px;
+                padding-right: 0;
             }
         }
     }
@@ -130,10 +140,19 @@
     }
 
     @media (max-width: 1199px) {
-        .alternate-item:nth-child(3n + 2) {
-            .wrapper-text {
-                padding-left: 30px;
-                padding-right: 0;
+        .alternate-item {
+            &:nth-child(3n + 2) {
+                .wrapper-text {
+                    padding-left: 30px;
+                    padding-right: 0;
+                }
+            }
+
+            &:nth-child(even) {
+                .wrapper-text {
+                    padding-left: 30px;
+                    padding-right: 0;
+                }
             }
         }
 
