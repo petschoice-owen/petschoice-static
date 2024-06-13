@@ -267,7 +267,6 @@ main {
 //     }
 // }
 
-
 @media (max-width: 1199px) {
     // main {
     //     padding-top: 100px;
@@ -420,4 +419,17 @@ main {
     //         }
     //     }
     // }
+}
+
+
+.admin-bar {
+    .top-navigation {
+        top: 32px;
+    }
+
+    @media (max-width: 782px) {
+        .top-navigation {
+            top: 46px;
+        }
+    }
 }
