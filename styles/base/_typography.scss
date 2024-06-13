@@ -96,6 +96,10 @@ a {
     &-white {
         color: $white;
     }
+
+    * {
+        font-size: 50px;
+    }
 }
 
 .section-subheading {
@@ -118,15 +122,27 @@ a {
     &-white {
         color: $white;
     }
+
+    * {
+        font-size: 22px;
+    }
 }
 
 @media (max-width: 1199px) {
     .section-heading {
         font-size: 40px;
+
+        * {
+            font-size: 40px;
+        }
     }
 
     .section-subheading {
         font-size: 20px;
+
+        * {
+            font-size: 20px;
+        }
     }
 }
 
@@ -196,9 +212,17 @@ a {
 
     .section-heading {
         font-size: 32px;
+
+        * {
+            font-size: 32px;
+        }
     }
 
     .section-subheading {
         font-size: 18px;
+
+        * {
+            font-size: 18px;
+        }
     }
 }
