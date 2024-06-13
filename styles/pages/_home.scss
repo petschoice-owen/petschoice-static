@@ -152,6 +152,10 @@
         .title {
             font-family: $font-kumbhsans-medium;
             font-size: 22px;
+
+            * {
+                font-size: 22px;
+            }
         }
 
         .description {
@@ -211,6 +215,10 @@
 
             .title {
                 font-size: 20px;
+
+                * {
+                    font-size: 20px;
+                }
             }
 
             .description {
@@ -258,6 +266,10 @@
             .title {
                 font-size: 18px;
                 line-height: 1.2;
+
+                * {
+                    font-size: 18px;
+                }
             }
 
             .description {
