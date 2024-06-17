@@ -432,4 +432,10 @@ main {
             top: 46px;
         }
     }
+
+    @media (max-width: 600px) {
+        &.scrolled .top-navigation {
+            top: 0;
+        }
+    }
 }

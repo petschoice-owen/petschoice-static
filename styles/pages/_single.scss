@@ -1,0 +1,167 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the single post.
+// -----------------------------------------------------------------------------
+
+.single {
+    .page-content {
+        padding: 80px 20px;
+
+        .container {
+            max-width: 1000px;
+        }
+
+        .section-heading {
+            font-size: 40px;
+        }
+
+        .date {
+            padding-top: 5px;
+            font-family: $font-kumbhsans-bold;
+            font-size: 16px;
+            color: $brand-color;
+        }
+
+        .featured-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 40px;
+
+            img {
+                width: auto;
+                max-width: 100%;
+                height: auto;
+                max-height: 800px;
+            }
+        }
+
+        .the-content {
+            padding-top: 40px;
+            font-family: $font-kumbhsans-medium;
+            color: $brand-color;
+
+            h1 + *,
+            h2 + *,
+            h3 + *,
+            h4 + *,
+            h5 + *,
+            h6 + *,
+            p + *,
+            ul + *,
+            ol + * {
+                margin-top: 20px;
+
+                a {
+                    color: $secondary-color;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            p, ul, ol, li, i, b, strong, span, div {
+                font-family: $font-kumbhsans-medium;
+                font-size: 16px;
+                color: $brand-color;
+
+                a {
+                    color: $secondary-color;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1199px) {
+        .page-content {
+            padding: 65px 20px;
+
+            .section-heading {
+                font-size: 34px;
+                line-height: 1.2;
+            }
+
+            .date {
+                font-size: 15px;
+            }
+
+            .featured-image {
+                padding-top: 35px;
+
+                img {
+                    max-height: 650px;
+                }
+            }
+
+            .the-content {
+                padding-top: 35px;
+
+                p, ul, ol, li, i, b, strong, span, div {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 991px) {
+        .page-content {
+            padding: 50px 20px;
+
+            .featured-image {
+                img {
+                    max-height: 500px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        .page-content {
+            padding: 40px 20px;
+
+            .section-heading {
+                font-size: 28px;
+                line-height: 1.1;
+            }
+
+            .date {
+                padding-top: 7px;
+                font-size: 14px;
+            }
+
+            .featured-image {
+                padding-top: 25px;
+
+                img {
+                    max-height: 400px;
+                }
+            }
+
+            .the-content {
+                padding-top: 25px;
+
+                h1 + *,
+                h2 + *,
+                h3 + *,
+                h4 + *,
+                h5 + *,
+                h6 + *,
+                p + *,
+                ul + *,
+                ol + * {
+                    margin-top: 15px;
+                }
+
+                p, ul, ol, li, i, b, strong, span, div {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
