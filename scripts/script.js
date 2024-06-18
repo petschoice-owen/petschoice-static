@@ -40,14 +40,15 @@ var customSlider = () => {
     if ($(".slider-team")) {
         $('.slider-team').slick({
             slidesToShow: 4,
-            slidesToScroll: 1,
-            autoplay: true,
+            slidesToScroll: 3,
+            // autoplay: true,
+            autoplay: false,
             autoplaySpeed: 3000,
             arrows: true,
             infinite: true,
             speed: 500,
-            dots: true,
             // dots: false,
+            dots: true,
             prevArrow: false,
             nextArrow: false,
             // swipe: true,
@@ -64,6 +65,7 @@ var customSlider = () => {
                     breakpoint: 768,
                     settings: {
                         slidesToShow: 2,
+                        slidesToScroll: 1,
                     }
                 },
                 // {

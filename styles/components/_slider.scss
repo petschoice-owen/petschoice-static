@@ -211,6 +211,38 @@
         bottom: 0;
     }
 
+    .slick-slide {
+        &:nth-child(3n + 1) {
+            .image-holder {
+                img {
+                    -webkit-mask-image: url(../assets/images/blob-2.png);
+                    mask-image: url(../assets/images/blob-2.png);
+                    mask-size: 100% 100%;
+                }
+            }
+        }
+        
+        &:nth-child(3n + 2) {
+            .image-holder {
+                img {
+                    -webkit-mask-image: url(../assets/images/blob-3.png);
+                    mask-image: url(../assets/images/blob-3.png);
+                    mask-size: 100% 100%;
+                }
+            }
+        }
+
+        &:nth-child(3n + 3) {
+            .image-holder {
+                img {
+                    -webkit-mask-image: url(../assets/images/blob-1.png);
+                    mask-image: url(../assets/images/blob-1.png);
+                    mask-size: 100% 100%;
+                }
+            }
+        }
+    }
+
     .slider-image {
         max-width: 270px;
         max-height: 270px;
@@ -492,6 +524,50 @@
                 max-width: 100%;
                 height: auto;
                 max-height: 100%;
+            }
+        }
+    }
+
+    .testimonial-v2 {
+        &:nth-child(3n + 1) {
+            .wrapper-image {
+                img {
+                    -webkit-mask-image: url(../assets/images/blob-1.png);
+                    mask-image: url(../assets/images/blob-1.png);
+                    mask-size: 100% 100%;
+                }
+
+                .blob {
+                    display: none;
+                }
+            }
+        }
+
+        &:nth-child(3n + 2) {
+            .wrapper-image {
+                img {
+                    -webkit-mask-image: url(../assets/images/blob-2.png);
+                    mask-image: url(../assets/images/blob-2.png);
+                    mask-size: 100% 100%;
+                }
+                
+                .blob {
+                    display: none;
+                }
+            }
+        }
+
+        &:nth-child(3n + 3) {
+            .wrapper-image {
+                img {
+                    -webkit-mask-image: url(../assets/images/blob-3.png);
+                    mask-image: url(../assets/images/blob-3.png);
+                    mask-size: 100% 100%;
+                }
+                
+                .blob {
+                    display: none;
+                }
             }
         }
     }
@@ -972,8 +1048,14 @@
 
             .wrapper-image {
                 width: 80%;
-                max-width: 200px;
-                max-height: 200px;
+                max-width: 300px;
+                max-height: 300px;
+
+                img {
+                    width: 80%;
+                    max-width: 300px;
+                    max-height: 300px;
+                }
             }
 
             .wrapper-text {
@@ -1026,6 +1108,44 @@
 
                     .department + .location {
                         padding-left: 3px;
+                    }
+                }
+            }
+        }
+
+        .slick-slide {
+            &:nth-child(3n + 1) {
+                .testimonial-v2 {
+                    .wrapper-image {
+                        img {
+                            -webkit-mask-image: url(../assets/images/blob-1.png);
+                            mask-image: url(../assets/images/blob-1.png);
+                            mask-size: 100% 100%;
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(3n + 2) {
+                .testimonial-v2 {
+                    .wrapper-image {
+                        img {
+                            -webkit-mask-image: url(../assets/images/blob-2.png);
+                            mask-image: url(../assets/images/blob-2.png);
+                            mask-size: 100% 100%;
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(3n + 3) {
+                .testimonial-v2 {
+                    .wrapper-image {
+                        img {
+                            -webkit-mask-image: url(../assets/images/blob-3.png);
+                            mask-image: url(../assets/images/blob-3.png);
+                            mask-size: 100% 100%;
+                        }
                     }
                 }
             }
@@ -1106,8 +1226,8 @@
 
     .slider-team {
         .slider-image {
-            max-width: 120px;
-            max-height: 120px;
+            max-width: 130px;
+            max-height: 130px;
         }
 
         .name {
