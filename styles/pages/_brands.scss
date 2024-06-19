@@ -47,7 +47,8 @@
         .product-link {
             display: flex;
             flex-direction: column;
-            justify-content: end;
+            // justify-content: end;
+            justify-content: center;
             height: 100%;
             color: $brand-color;
             text-align: center;
@@ -61,12 +62,22 @@
             }
         }
 
+        .product-image-wrapper {
+            display: flex;
+            align-items: center;
+            max-width: 300px;
+            height: 200px;
+            padding: 0 20px;
+            margin: 0 auto;
+        }
+
         .product-image {
             width: auto;
             max-width: 100%;
             height: auto;
-            max-height: 280px;
-            transform: scale(.98);
+            // max-height: 200px;
+            max-height: 100%;
+            transform: scale(.95);
             transition: all .3s ease-in-out;
         }
 
@@ -75,7 +86,7 @@
         }
 
         .product-name {
-            margin-top: 25px;
+            margin-top: 15px;
             font-family: $font-kumbhsans-black;
             font-size: 26px;
         }
@@ -99,12 +110,20 @@
         .our-brands {
             padding: 80px 0;
 
-            .product-image {
-                max-height: 230px;
+            .product-image-wrapper {
+                height: 180px;
             }
+
+            // .product-image {
+            //     max-height: 230px;
+            // }
 
             .product-details {
                 padding: 0 10px;
+            }
+
+            .product-name {
+                font-size: 24px;
             }
         }
     }
@@ -117,8 +136,16 @@
                 padding: 20px;
             }
 
-            .product-image {
-                max-height: 190px;
+            .product-image-wrapper {
+                height: 150px;
+            }
+
+            // .product-image {
+            //     max-height: 190px;
+            // }
+
+            .product-name {
+                font-size: 22px;
             }
         }
     }
@@ -133,8 +160,16 @@
                 width: 50%;
             }
 
+            .product-image-wrapper {
+                height: auto;
+            }
+
+            .product-image {
+                max-height: 140px;
+            }
+
             .product-name {
-                font-size: 22px;
+                font-size: 20px;
             }
         }
     }
@@ -149,7 +184,8 @@
 
             .product-item {
                 width: 100%;
-                max-width: 360px;
+                // max-width: 360px;
+                max-width: 280px;
                 margin-left: auto;
                 margin-right: auto;
             }

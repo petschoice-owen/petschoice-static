@@ -40,6 +40,37 @@
     }
 }
 
+.button-orange {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 12px 30px;
+    font-family: $font-kumbhsans-bold;
+    font-size: 20px;
+    color: $white;
+    background-color: $secondary-color;
+    border-radius: 50px;
+
+    &:hover {
+        color: $white;
+        background-color: $brand-color;
+    }
+
+    &:active,
+    &:focus {
+        color: $white;
+    }
+
+    @media (max-width: 1199px) {
+        font-size: 18px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 16px;
+    }
+}
+
 .btn-brown {
     position: relative;
     display: flex;

@@ -51,7 +51,7 @@
             p + *,
             ul + *,
             ol + * {
-                margin-top: 20px;
+                padding-top: 20px;
 
                 a {
                     color: $secondary-color;
@@ -73,6 +73,22 @@
                     &:hover {
                         text-decoration: underline;
                     }
+                }
+            }
+
+            ul ul,
+            ol ol,
+            ul ol,
+            ol ul {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            li {
+                padding: 5px 0;
+
+                li {
+                    padding: 2px 0;
                 }
             }
         }
@@ -155,7 +171,7 @@
                 p + *,
                 ul + *,
                 ol + * {
-                    margin-top: 15px;
+                    padding-top: 15px;
                 }
 
                 p, ul, ol, li, i, b, strong, span, div {
