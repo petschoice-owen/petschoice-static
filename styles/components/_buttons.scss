@@ -9,7 +9,7 @@
     justify-content: center;
 }
 
-.button-purple {
+.button-orange {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,12 +18,15 @@
     font-family: $font-kumbhsans-bold;
     font-size: 20px;
     color: $white;
-    background-color: $brand-color;
+    background-color: $secondary-color;
     border-radius: 50px;
+    border: none;
+    appearance: none;
+    transition: .25s ease-in-out all;
 
     &:hover {
         color: $white;
-        background-color: $secondary-color;
+        background-color: $brand-color;
     }
 
     &:active,
@@ -40,7 +43,7 @@
     }
 }
 
-.button-orange {
+.button-purple {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,12 +52,15 @@
     font-family: $font-kumbhsans-bold;
     font-size: 20px;
     color: $white;
-    background-color: $secondary-color;
+    background-color: $brand-color;
     border-radius: 50px;
+    border: none;
+    appearance: none;
+    transition: .25s ease-in-out all;
 
     &:hover {
         color: $white;
-        background-color: $brand-color;
+        background-color: $secondary-color;
     }
 
     &:active,

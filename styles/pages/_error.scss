@@ -4,6 +4,110 @@
 // This file contains styles that are specific to the error 404 page.
 // -----------------------------------------------------------------------------
 
+.page-404 {
+    .content-area {
+        padding: 100px 0 120px;
+    }
+
+    .wrapper {
+        color: $brand-color;
+        text-align: center;
+    }
+
+    .text-big {
+        font-family: $font-kumbhsans-black;
+        font-size: 150px;
+        line-height: 1;
+        color: $brand-color;
+    }
+
+    .section-heading + .section-subheading {
+        margin: 20px auto 0;
+    }
+
+    .section-subheading {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section-heading + .button-holder,
+    .section-subheading + .button-holder {
+        margin-top: 30px;
+    }
+
+    .button-holder {
+        a {
+            min-width: 210px;
+            font-size: 18px;
+            
+            & + a {
+                margin-left: 20px;
+            }
+        }
+    }
+
+    @media (max-width: 1199px) {
+        .text-big {
+            font-size: 120px;
+        }
+
+        .section-subheading {
+            max-width: 800px;
+        }
+
+        .button-holder {
+            a {
+                font-size: 17px;
+            }
+        }
+    }
+
+    @media (max-width: 991px) {
+        .section-subheading {
+            max-width: 80%;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .content-area {
+            padding: 50px 0 60px;
+        }
+
+        .text-big {
+            font-size: 90px;
+        }
+
+        .section-subheading {
+            max-width: 90%;
+        }
+
+        .section-heading + .button-holder,
+        .section-subheading + .button-holder {
+            margin-top: 25px;
+        }
+
+        .button-holder {
+            a {
+                font-size: 16px;
+            }
+        }
+    }
+
+    @media (max-width: 575px) {
+        .button-holder {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            a + a {
+                margin-top: 15px;
+                margin-left: 0;
+            }
+        }
+    }
+}
+
 .section-404 {
     padding: 100px 0;
 

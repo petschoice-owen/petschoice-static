@@ -56,6 +56,18 @@
             }
         }
 
+        &:nth-child(odd) {
+            .wrapper-image {
+                order: 2;
+            }
+
+            .wrapper-text {
+                order: 1;
+                padding-left: 0;
+                padding-right: 50px;
+            }
+        }
+
         &:nth-child(even) {
             .wrapper-image {
                 order: 1;
@@ -148,6 +160,13 @@
                 }
             }
 
+            &:nth-child(odd) {
+                .wrapper-text {
+                    padding-left: 0;
+                    padding-right: 30px;
+                }
+            }
+
             &:nth-child(even) {
                 .wrapper-text {
                     padding-left: 30px;
@@ -173,6 +192,16 @@
                 .wrapper-image {
                     width: 100%;
                     padding: 0;
+                }
+            }
+
+            &:nth-child(odd) {
+                .wrapper-image {
+                    order: 1;
+                }
+    
+                .wrapper-text {
+                    order: 2;
                 }
             }
         }

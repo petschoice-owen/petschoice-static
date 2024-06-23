@@ -22,7 +22,8 @@
 // 4. Components
 @import
     'components/buttons',
-    'components/slider';
+    'components/slider',
+    'components/contact-form';
 
 // 5. Layout-related sections
 @import
@@ -37,7 +38,8 @@
     'layout/alternate',
     'layout/product-slider',
     'layout/social-section',
-    'layout/brand-logos';
+    'layout/brand-logos',
+    'layout/section-squares';
 
 // 6. Page-specific styles
 @import
@@ -49,4 +51,5 @@
     'pages/error',
     'pages/single',
     'pages/page',
-    'pages/about';
+    'pages/about',
+    'pages/contact';
