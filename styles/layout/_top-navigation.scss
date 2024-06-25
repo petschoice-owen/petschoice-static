@@ -292,6 +292,24 @@ main {
         .navbar {
             .navbar-nav {
                 margin-left: 20px;
+
+                // adjustment for additional menu on top navigation
+                & > li {
+                    & > a {
+                        padding: 15px;
+                        font-size: 16px;
+                    }
+
+                    ul {
+                        li {
+                            padding: 0;
+                        }
+
+                        a {
+                            font-size: 15px;
+                        }
+                    }
+                }
             }
 
             .navbar-social img {

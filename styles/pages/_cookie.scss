@@ -1,0 +1,67 @@
+//main: ../main.scss
+
+// --------------------------------------------------------------------------------
+// This file contains styles that are specific to the cookie policy/complianz page.
+// --------------------------------------------------------------------------------
+
+.page-main {
+    .page-content .cmplz-document {
+        h1 + *,
+        h2 + *,
+        h3 + *,
+        h4 + *,
+        h5 + *,
+        h6 + *,
+        p + *,
+        ul + *,
+        ol + *,
+        div + * {
+            padding-top: 20px;
+
+            a {
+                color: $secondary-color;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        h2 {
+            margin-top: 15px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        & > p:last-child {
+            display: none;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .page-content .cmplz-document h2 {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .page-content .cmplz-document {
+            h1 + *,
+            h2 + *,
+            h3 + *,
+            h4 + *,
+            h5 + *,
+            h6 + *,
+            p + *,
+            ul + *,
+            ol + *,
+            div + * {
+                padding-top: 15px;
+            }
+            
+            h2 {
+                font-size: 18px;
+            }
+        }
+    }
+}

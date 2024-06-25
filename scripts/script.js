@@ -364,6 +364,15 @@ var slickTestimonials = () => {
     });
 }
 
+// complianz page
+var complianzAdjustments = () => {
+    if ($("#cmplz-document")) {
+        setTimeout(() => {
+            $("#cmplz-document").removeAttr('id');
+        }, 100);
+    }
+}
+
 // main element - auto padding-top
 var mainAutoPadding = () => {
     if ($(".top-navigation")) {
@@ -398,7 +407,12 @@ $(document).ready(function() {
     slickNews();
     slickLocations();
     slickTestimonials();
+    complianzAdjustments();
 });
+
+// $(window).on('load', function() {
+
+// });
 
 $(window).resize(function() {
     if (!$('.slider-ethos').hasClass('slick-initialized')) {

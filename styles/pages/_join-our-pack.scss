@@ -1,7 +1,7 @@
 //main: ../main.scss
 
 // -----------------------------------------------------------------------------
-// This file contains styles that are specific to the single post.
+// This file contains styles that are specific to the join our pack page.
 // -----------------------------------------------------------------------------
 
 .single {
@@ -50,7 +50,8 @@
             h6 + *,
             p + *,
             ul + *,
-            ol + * {
+            ol + *,
+            div + * {
                 padding-top: 20px;
 
                 a {
@@ -154,7 +155,8 @@
                 h6 + *,
                 p + *,
                 ul + *,
-                ol + * {
+                ol + *,
+                div + * {
                     padding-top: 15px;
                 }
 

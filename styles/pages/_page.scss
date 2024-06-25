@@ -62,7 +62,7 @@
                 }
             }
 
-            p, ul, ol, li, i, b, strong, span, div {
+            p, ul, ol, li, span, div {
                 font-family: $font-kumbhsans-medium;
                 font-size: 18px;
                 color: $brand-color;
@@ -118,7 +118,7 @@
             .the-content {
                 padding-top: 35px;
 
-                p, ul, ol, li, i, b, strong, span, div {
+                p, ul, ol, li, span, div {
                     font-size: 17px;
                 }
             }
@@ -174,7 +174,7 @@
                     padding-top: 15px;
                 }
 
-                p, ul, ol, li, i, b, strong, span, div {
+                p, ul, ol, li, span, div {
                     font-size: 16px;
                 }
             }

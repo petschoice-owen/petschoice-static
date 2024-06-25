@@ -1,10 +1,10 @@
 //main: ../main.scss
 
 // -----------------------------------------------------------------------------
-// This file contains styles that are specific to the single post.
+// This file contains styles that are specific to the single job post.
 // -----------------------------------------------------------------------------
 
-.single {
+.single-awsm_job_openings {
     .page-content {
         padding: 80px 20px;
 
@@ -51,7 +51,7 @@
             p + *,
             ul + *,
             ol + * {
-                padding-top: 20px;
+                padding-top: 10px;
 
                 a {
                     color: $secondary-color;
@@ -146,17 +146,17 @@
             .the-content {
                 padding-top: 25px;
 
-                h1 + *,
-                h2 + *,
-                h3 + *,
-                h4 + *,
-                h5 + *,
-                h6 + *,
-                p + *,
-                ul + *,
-                ol + * {
-                    padding-top: 15px;
-                }
+                // h1 + *,
+                // h2 + *,
+                // h3 + *,
+                // h4 + *,
+                // h5 + *,
+                // h6 + *,
+                // p + *,
+                // ul + *,
+                // ol + * {
+                //     padding-top: 15px;
+                // }
 
                 p, ul, ol, li, span, div {
                     font-size: 14px;
