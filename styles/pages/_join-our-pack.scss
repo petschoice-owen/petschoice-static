@@ -4,164 +4,134 @@
 // This file contains styles that are specific to the join our pack page.
 // -----------------------------------------------------------------------------
 
-.single {
-    .page-content {
-        padding: 80px 20px;
-
-        .container {
-            max-width: 1000px;
+.page-main .page-content .the-content {
+    .awsm-job-wrap {
+        p, ul, ol, li, span, div {
+            font-size: 14px;
         }
 
-        .section-heading {
-            font-size: 40px;
-        }
+        .awsm-filter-item-search {
+            width: calc(100% - 500px);
 
-        .date {
-            padding-top: 5px;
-            font-family: $font-kumbhsans-bold;
-            font-size: 16px;
-            color: $brand-color;
-        }
-
-        .featured-image {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-top: 40px;
-
-            img {
-                width: auto;
-                max-width: 100%;
-                height: auto;
-                max-height: 800px;
-            }
-        }
-
-        .the-content {
-            padding-top: 40px;
-            font-family: $font-kumbhsans-medium;
-            color: $brand-color;
-
-            h1 + *,
-            h2 + *,
-            h3 + *,
-            h4 + *,
-            h5 + *,
-            h6 + *,
-            p + *,
-            ul + *,
-            ol + *,
-            div + * {
-                padding-top: 20px;
-
-                a {
-                    color: $secondary-color;
-
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
-            }
-
-            p, ul, ol, li, span, div {
-                font-family: $font-kumbhsans-medium;
-                font-size: 16px;
-                color: $brand-color;
-
-                a {
-                    color: $secondary-color;
-
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
-            }
-        }
-    }
-
-    @media (max-width: 1199px) {
-        .page-content {
-            padding: 65px 20px;
-
-            .section-heading {
-                font-size: 34px;
-                line-height: 1.2;
-            }
-
-            .date {
-                font-size: 15px;
-            }
-
-            .featured-image {
-                padding-top: 35px;
-
-                img {
-                    max-height: 650px;
-                }
-            }
-
-            .the-content {
-                padding-top: 35px;
-
-                p, ul, ol, li, span, div {
-                    font-size: 15px;
-                }
-            }
-        }
-    }
-
-    @media (max-width: 991px) {
-        .page-content {
-            padding: 50px 20px;
-
-            .featured-image {
-                img {
-                    max-height: 500px;
-                }
-            }
-        }
-    }
-
-    @media (max-width: 767px) {
-        .page-content {
-            padding: 40px 20px;
-
-            .section-heading {
-                font-size: 28px;
-                line-height: 1.1;
-            }
-
-            .date {
-                padding-top: 7px;
+            .awsm-job-search {
+                padding: 8px 40px 8px 12px;
                 font-size: 14px;
+                color: $brand-color;
+                border: 1px solid #dddfe3;
+                box-shadow: 0 1px 4px 0 rgba(0,0,0,0.05);
             }
+        }
 
-            .featured-image {
-                padding-top: 25px;
+        .awsm-filter-items {
+            width: auto;
+        }
 
-                img {
-                    max-height: 400px;
+        .awsm-filter-item {
+            min-width: 250px;
+
+            .awsm-selectric-items {
+                .selected {
+                    color: $white;
+                    background-color: $brand-color;
+                    pointer-events: none;
+                }
+
+                // li:hover {
+                //     color: $white;
+                //     background-color: $secondary-color;
+                // }
+            }
+        }
+
+        .awsm-job-item {
+            border-radius: 5px;
+
+            &:hover {
+                background-color: $brand-color;
+
+                .awsm-job-post-title,
+                .awsm-job-more,
+                .awsm-job-more span {
+                    color: $white;
                 }
             }
 
-            .the-content {
-                padding-top: 25px;
+            .awsm-job-post-title,
+            .awsm-job-more,
+            .awsm-job-more span {
+                color: $brand-color;
+                transition: all .3s ease;
+            }
 
-                h1 + *,
-                h2 + *,
-                h3 + *,
-                h4 + *,
-                h5 + *,
-                h6 + *,
-                p + *,
-                ul + *,
-                ol + *,
-                div + * {
-                    padding-top: 15px;
+            .awsm-job-post-title {
+                font-family: $font-kumbhsans-bold;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .awsm-filter-item-search {
+                width: calc(100% - 410px);
+            }
+
+            .awsm-filter-item {
+                min-width: 200px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .awsm-filter-item-search {
+                width: calc(100% - 56px);
+            }
+
+            .awsm-filter-toggle {
+                margin-left: 0;
+
+                path {
+                    fill: $brand-color;
+                    transition: all .3s ease-in-out;
                 }
 
-                p, ul, ol, li, span, div {
-                    font-size: 14px;
+                &.awsm-on {
+                    background-color: $brand-color;
+
+                    path {
+                        fill: $white;
+                    }
+                }
+            }
+
+            .awsm-filter-items {
+                width: calc(100% + 10px);
+                margin-left: -5px;
+                margin-right: -5px;
+            }
+
+            .awsm-filter-item {
+                min-width: 50%;
+                padding: 10px 15px;
+
+                &:nth-child(1) {
+                    float: left;
+                }
+                
+                &:nth-child(2) {
+                    float: right;
+                }
+            }
+        }
+
+        @media (max-width: 575px) {
+            .awsm-filter-items {
+                width: 100%;
+            }
+
+            .awsm-filter-item {
+                min-width: 100%;
+                padding: 10px;
+
+                &:nth-child(1),
+                &:nth-child(2) {
+                    float: none;
                 }
             }
         }

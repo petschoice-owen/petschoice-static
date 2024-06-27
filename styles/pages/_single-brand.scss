@@ -258,8 +258,19 @@
             }
 
             .wrapper-button {
+                flex-direction: column;
+                align-items: center;
                 // margin-top: 20px;
                 margin-top: 30px;
+            }
+
+            .button-purple {
+                // min-width: 165px;
+                min-width: 195px;
+
+                & + .button-purple {
+                    margin: 15px 0 0;
+                }
             }
         }
     }
@@ -268,10 +279,6 @@
         .brand-intro {
             .wrapper-button {
                 flex-wrap: wrap;
-            }
-
-            .button-purple+.button-purple {
-                margin: 15px 0 0;
             }
         }
     }
