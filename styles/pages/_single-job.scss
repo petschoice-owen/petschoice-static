@@ -13,65 +13,156 @@
             max-width: 1320px;
         }
 
+        .awsm-job-single-wrap {
+            margin-bottom: 0;
+        }
+
         .awsm-col-2 {
             .awsm-job-content {
-                width: 65%;
+                // width: 65%;
+                width: calc(100% - 400px);
+                padding-bottom: 0;
             }
 
             .awsm-job-form {
-                width: 35%;
+                // width: 35%;
+                width: 400px;
             }
         }
 
-        .awsm-job-single-wrap {
-            height: auto;
+        .awsm-job-specifications-container {
+            margin-bottom: 30px;
         }
 
         .awsm-job-specification-term {
             pointer-events: none;
         }
 
+        .awsm-job-form {
+            .awsm-job-form-inner {
+                padding: 35px 30px;
+                color: $white;
+                background-color: $brand-color;
+                border: none;
+            }
 
+            h2 {
+                margin-bottom: 15px;
+                font-size: 24px;
+            }
 
+            label,
+            label span,
+            .awsm-job-form-group,
+            .awsm-job-form-group small {
+                color: $white;
+            }
 
+            .awsm-job-form-group label {
+                margin-bottom: 5px;
+            }
 
+            .awsm-job-form-field {
+                font-size: 14px;
+            }
 
+            .awsm-job-form-group input + small {
+                display: block;
+                margin-top: 10px;
+                font-size: 14px;
+                font-style: italic;
+            }
 
+            .awsm-job-inline-group {
+                label, input {
+                    cursor: pointer;
+                }
 
+                #awsm_form_privacy_policy-error.awsm-job-form-error {
+                    padding: 5px 10px;
+                    margin-top: 5px;
+                    font-size: 14px;
+                    color: $white;
+                    background-color: $red-error;
+                }
+            }
 
+            .awsm-job-form-group:last-child {
+                margin-bottom: 0;
+            }
 
+            .awsm-application-submit-btn {
+                @extend .button-orange;
 
+                padding: 10px 35px;
+                font-size: 16px;
+                border: 2px solid $secondary-color;
+            }
 
-        .section-heading {
-            font-size: 40px;
-        }
+            #awsm-applicant-name,
+            #awsm-applicant-email,
+            #awsm-applicant-phone,
+            #awsm-cover-letter {
+                width: 100%;
+                padding: 10px;
+                font-family: $font-kumbhsans-medium;
+                font-size: 16px;
+                // color: $brand-color;
+                color: $secondary-color;
+                border: 2px solid $light-grey;
+                border-radius: 0;
+                outline: none;
+                appearance: none;
+                resize: none;
+                transition: .25s ease-in-out all;
 
-        .date {
-            padding-top: 5px;
-            font-family: $font-kumbhsans-bold;
-            font-size: 16px;
-            color: $brand-color;
-        }
+                &:focus {
+                    border-color: $secondary-color;
+                }
+            }
 
-        .featured-image {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-top: 40px;
+            #awsm-application-file.awsm-job-form-error {
+                color: $white;
+                background-color: $red-error;
+                border: none;
+            }
 
-            img {
-                width: auto;
-                max-width: 100%;
-                height: auto;
-                max-height: 800px;
+            #awsm-application-file {
+                cursor: pointer;
+            }
+
+            .awsm-job-form-field + .awsm-job-form-error,
+            .awsm-job-form-field + small + .awsm-job-form-error {
+                padding: 5px 10px;
+                font-size: 14px;
+                color: $white;
+                background-color: $red-error;
+            }
+
+            .awsm-job-form-field + small + .awsm-job-form-error {
+                margin-top: 5px;
+            }
+
+            .awsm-application-message {
+                padding: 20px;
+                margin-top: 20px;
+                color: $white;
+                border-width: 2px;
+                border-style: solid;
+
+                &.awsm-success-message {
+                    border-color: $green-success;
+                }
+
+                * {
+                    font-size: 16px;
+                    color: $white;
+                    text-align: center;
+                }
             }
         }
 
         .the-content {
-            padding-top: 40px;
-            font-family: $font-kumbhsans-medium;
-            color: $brand-color;
-
             h1 + *,
             h2 + *,
             h3 + *,
@@ -82,84 +173,37 @@
             ul + *,
             ol + * {
                 padding-top: 10px;
-
-                a {
-                    color: $secondary-color;
-
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
             }
 
-            p, ul, ol, li, span, div {
-                font-family: $font-kumbhsans-medium;
-                font-size: 16px;
-                color: $brand-color;
-
-                a {
-                    color: $secondary-color;
-
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
-            }
-        }
-    }
-
-    @media (max-width: 1199px) {
-        .page-content {
-            padding: 65px 20px;
-
-            .section-heading {
-                font-size: 34px;
-                line-height: 1.2;
-            }
-
-            .date {
-                font-size: 15px;
-            }
-
-            .featured-image {
-                padding-top: 35px;
-
-                img {
-                    max-height: 650px;
-                }
-            }
-
-            .the-content {
-                padding-top: 35px;
-
-                p, ul, ol, li, span, div {
-                    font-size: 15px;
-                }
+            ul, ol {
+                padding-left: 30px; 
             }
         }
     }
 
     @media (max-width: 991px) {
         .page-content {
-            padding: 50px 20px;
+            padding: 50px 20px 0;
 
             .awsm-col-2 {
-                .awsm-job-content,
-                .awsm-job-form  {
+                .awsm-job-content {
                     width: 100%;
+                }
+
+                .awsm-job-form {
+                    width: calc(100% + 80px);
+                    margin-top: 20px;
+                    margin-left: -40px;
                 }
             }
 
+            .awsm-job-form {
+                .awsm-job-form-inner {
+                    padding: 50px 40px;
+                }
 
-
-
-
-
-
-
-            .featured-image {
-                img {
-                    max-height: 500px;
+                h2 {
+                    font-size: 20px;
                 }
             }
         }
@@ -167,40 +211,47 @@
 
     @media (max-width: 767px) {
         .page-content {
-            padding: 40px 20px;
+            padding: 40px 10px 0;
 
-            .section-heading {
-                font-size: 28px;
-                line-height: 1.1;
-            }
-
-            .date {
-                padding-top: 7px;
-                font-size: 14px;
-            }
-
-            .featured-image {
-                padding-top: 25px;
-
-                img {
-                    max-height: 400px;
+            .awsm-col-2 {
+                .awsm-job-form {
+                    width: calc(100% + 50px);
+                    margin-left: -25px;
                 }
             }
 
+            .awsm-job-form {
+                .awsm-job-form-inner {
+                    padding: 50px 25px;
+                }
+
+                #awsm-applicant-email,
+                #awsm-applicant-name,
+                #awsm-applicant-phone,
+                #awsm-cover-letter {
+                    font-size: 14px;
+                }
+
+                .awsm-application-submit-btn {
+                    padding: 8px 28px;
+                    font-size: 14px;
+                }
+
+                .awsm-job-form-field + .awsm-job-form-error, 
+                .awsm-job-form-field + small + .awsm-job-form-error,
+                .awsm-job-inline-group #awsm_form_privacy_policy-error.awsm-job-form-error {
+                    font-size: 12px;
+                }
+                
+                .awsm-application-message {
+                    * {
+                        font-size: 14px;
+                    }
+                }
+            }
+           
             .the-content {
                 padding-top: 25px;
-
-                // h1 + *,
-                // h2 + *,
-                // h3 + *,
-                // h4 + *,
-                // h5 + *,
-                // h6 + *,
-                // p + *,
-                // ul + *,
-                // ol + * {
-                //     padding-top: 15px;
-                // }
 
                 p, ul, ol, li, span, div {
                     font-size: 14px;
