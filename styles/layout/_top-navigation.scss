@@ -144,6 +144,7 @@ main {
 
                         &:hover {
                             background-color: $brand-color;
+                            box-shadow: 0 0 10px rgba(0,0,0,.3);
                         }
                     }
                 }
@@ -285,6 +286,12 @@ main {
             }
         }
     }
+}
+
+@media (min-width: 992px) {
+    .navbar .navbar-nav > li ul a {
+		min-width: 185px;
+	}
 }
 
 @media (max-width: 991px) {

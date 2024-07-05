@@ -595,6 +595,17 @@
 }
 
 @media (max-width: 1399px) {
+    .slider-banner-home {
+        .slider-image-desktop {
+            height: 47vw;
+            min-height: 300px;
+        }
+
+        .slider-image {
+            object-position: right;
+        }
+    }
+
     .slider-team {
         .slider-image {
             max-width: 220px;

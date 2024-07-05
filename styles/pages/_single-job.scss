@@ -31,7 +31,14 @@
         }
 
         .awsm-job-specifications-container {
+            display: none;
             margin-bottom: 30px;
+        }
+
+        .awsm-job-specification-item>[class^=awsm-job-icon-] {
+            display: inline-block;
+            width: 18px;
+            text-align: center;
         }
 
         .awsm-job-specification-term {

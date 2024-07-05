@@ -102,88 +102,6 @@
     }
 }
 
-// .banner-brands {
-//     position: relative;
-//     overflow: hidden;
-
-//     .container {
-//         position: relative;
-//         z-index: 2;
-//     }
-
-//     .wrapper {
-//         position: relative;
-//         display: flex;
-//     }
-
-//     .banner-heading {
-//         display: flex;
-//         flex-direction: column;
-//         width: 45%;
-//         padding: 100px 0;
-//     }
-
-//     .banner-image {
-//         position: absolute;
-//         top: 0;
-//         right: 0;
-//         bottom: 0;
-//         object-fit: cover;
-//         object-position: center;
-//         width: 52%;
-//         height: auto;
-//         margin: auto;
-//     }
-
-//     @media (max-width: 767px) {
-//         .container {
-//             padding: 0;
-//         }
-
-//         .banner-heading {
-//             position: relative;
-//             width: 100%;
-//             padding: 50px 15px;
-
-//             // * {
-//             //     position: relative;
-//             //     z-index: 2;
-//             // }
-//         }
-
-//         // .section-heading-bg {
-//         //     position: absolute;
-//         //     top: 0;
-//         //     left: 0;
-//         //     z-index: 1;
-//         //     width: 100%;
-//         //     height: 100%;
-//         //     background-color: $black;
-//         //     opacity: .8;
-//         // }
-
-//         .banner-image {
-//             left: 0;
-//             width: 100%;
-//             // left: -10%;
-//             // width: 170%;
-//             height: auto;
-//             margin: auto;
-//         }
-//     }
-
-//     @media (max-width: 575px) {
-//         .banner-image {
-//             // left: 0;
-//             // width: 100%;
-//             left: -10%;
-//             width: 170%;
-//             height: auto;
-//             margin: auto;
-//         }
-//     }
-// }
-
 .banner-about,
 .banner-brands,
 .banner-section {
@@ -227,9 +145,33 @@
         margin-top: 15px;
     }
 
+    @media (max-width: 1399px) {
+        .banner-image {
+            object-position: right;
+        }
+    }
+
     @media (max-width: 1199px) {
         .banner-image {
             min-height: 400px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        .banner-image {
+            min-height: 300px;
+        }
+
+        .banner-heading {
+            width: 42%;
+            
+            .section-heading * {
+                font-size: 30px;
+            }
+        }
+
+        .section-subheading {
+            font-size: 16px;
         }
     }
 
@@ -239,8 +181,9 @@
             top: 0;
             left: 0;
             width: 100%;
-            min-height: auto;
             height: 100%;
+            min-height: auto;
+            object-position: bottom;
         }
 
         .banner-image-desktop {

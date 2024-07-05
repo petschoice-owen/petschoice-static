@@ -373,6 +373,21 @@ var complianzAdjustments = () => {
     }
 }
 
+// single job post
+var joinPack = () => {
+    if ($('.single-awsm_job_openings')) {
+        if ($('.awsm-job-specification-job-category')) {
+            var label = $(".awsm-job-specification-job-category .awsm-job-specification-label strong");
+            var text = label.text();
+            label.text(text.replace("Categories", "Category"));
+        }
+        
+        setTimeout(() => {
+            $('.awsm-job-specifications-container').show();
+        }, 100);
+    }
+}
+
 // main element - auto padding-top
 var mainAutoPadding = () => {
     if ($(".top-navigation")) {
@@ -408,6 +423,7 @@ $(document).ready(function() {
     slickLocations();
     slickTestimonials();
     complianzAdjustments();
+    joinPack();
 });
 
 // $(window).on('load', function() {

@@ -30,6 +30,7 @@
         flex-direction: column;
         width: 100%;
         transition: .3s ease-in-out all;
+        pointer-events: none;
 
         &:hover {
             box-shadow: 0 10px 20px rgba(0,0,0,.3);
