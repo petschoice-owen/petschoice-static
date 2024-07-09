@@ -156,8 +156,14 @@
                 top: -1vw;
             }
 
+            .product-items {
+                margin-left: -15px;
+                margin-right: -15px;
+            }
+
             .product-item {
                 width: 50%;
+                padding: 10px;
             }
 
             .product-image-wrapper {
@@ -182,13 +188,13 @@
                 width: 160vw;
             }
 
-            .product-item {
-                width: 100%;
-                // max-width: 360px;
-                max-width: 280px;
-                margin-left: auto;
-                margin-right: auto;
-            }
+            // .product-item {
+            //     width: 100%;
+            //     // max-width: 360px;
+            //     max-width: 280px;
+            //     margin-left: auto;
+            //     margin-right: auto;
+            // }
         }
     }
 }

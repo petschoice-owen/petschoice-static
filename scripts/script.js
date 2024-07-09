@@ -15,6 +15,42 @@ var windowScrolled = () => {
         $(window).scroll(checkScroll);
     });
 }
+var backButton =() => {
+    window.addEventListener('popstate', function() {
+        // if ($('.top-navigation .navbar-toggler').is('[aria-expanded="true"]')) {
+        //     $('.navbar-toggler').click();
+        // }
+
+        if ($('.top-navigation .navbar-collapse').hasClass('show')) {
+            $('.navbar-toggler').click();
+        }
+
+        // location.reload();
+    });
+
+    window.addEventListener('beforeunload', () => {
+        if ($('.top-navigation .navbar-collapse').hasClass('show')) {
+            $('.navbar-toggler').click();
+        }
+    });
+}
+
+var goBack = () => {
+    if (window.history && window.history.pushState) {
+        window.history.pushState('forward', null, './#forward');
+        $(window).on('popstate', function() {
+            window.history.back();
+
+            // if ($('.top-navigation .navbar-collapse').hasClass('show')) {
+            //     $('.navbar-toggler').click();
+            //     window.history.back();
+            // }
+            // else {
+            //     window.history.back();
+            // }
+        });
+    }
+}
 
 // slider function
 var customSlider = () => {
@@ -66,6 +102,7 @@ var customSlider = () => {
                     settings: {
                         slidesToShow: 2,
                         slidesToScroll: 1,
+                        swipe: true,
                     }
                 },
                 // {
@@ -415,6 +452,7 @@ var mainAutoPadding = () => {
 
 // initialize the functions
 windowScrolled();
+backButton();
 
 $(document).ready(function() {
     customSlider();
