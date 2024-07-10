@@ -110,7 +110,9 @@
     .banner-image {
         width: 100%;
         max-width: 100%;
-        min-height: 450px;
+        // min-height: 450px;
+        height: 50vh;
+        min-height: 400px;
         object-fit: cover;
         object-position: center;
     }
@@ -148,18 +150,21 @@
     @media (max-width: 1399px) {
         .banner-image {
             object-position: right;
+            height: 45vh;
+            min-height: 380px;        
         }
     }
 
     @media (max-width: 1199px) {
         .banner-image {
-            min-height: 400px;
+            min-height: 350px;
         }
     }
 
     @media (min-width: 768px) and (max-width: 991px) {
         .banner-image {
-            min-height: 300px;
+            height: 38vh;
+            min-height: 250px;
         }
 
         .banner-heading {
@@ -236,7 +241,8 @@
     .banner-image {
         width: 100%;
         object-fit: cover;
-        max-height: 500px;
+        // max-height: 500px;
+        max-height: 350px;
     }
 
     .banner-image-mobile {
@@ -250,6 +256,10 @@
 
         .banner-image-mobile {
             display: block;
+        }
+
+        .banner-image {
+            max-height: 250px;
         }
     }
 }

@@ -1,0 +1,67 @@
+//main: ../main.scss
+
+// --------------------------------------------------------------------------------------------
+// This file contains all styles related to the section cta of the site/application.
+// --------------------------------------------------------------------------------------------
+
+.section-cta {
+    padding: 100px 0;
+
+    &.no-top-padding {
+        padding-top: 0;
+    }
+
+    &.background {
+        &-grey {
+            background-color: $light-grey;
+        }
+
+        &-purple {
+            background-color: $brand-color;
+
+            .button-holder a {
+                background-color: $secondary-color;
+                border: 2px solid $secondary-color;
+
+                &:hover {
+                    background-color: $brand-color;
+                    border-color: $secondary-color;
+                }
+            }
+        }
+
+        &-white {
+            background-color: $white;
+        }
+    }
+
+    .button-holder {
+        display: flex;
+        align-items: center;
+
+        a + a {
+            margin-left: 20px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        padding: 80px 0;
+    }
+
+    @media (max-width: 767px) {
+        padding: 50px 0;
+
+        .button-holder {
+            flex-direction: column;
+
+            a {
+                min-width: 200px;
+
+                & + a {
+                    margin-top: 15px;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}

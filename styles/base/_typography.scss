@@ -78,7 +78,7 @@ a {
 
 .section-heading {
     font-family: $font-kumbhsans-black;
-    font-size: 50px;
+    font-size: 46px;
     color: $brand-color;
 
     b, strong {
@@ -98,13 +98,13 @@ a {
     }
 
     * {
-        font-size: 50px;
+        font-size: 46px;
     }
 }
 
 .section-subheading {
     font-family: $font-kumbhsans-medium;
-    font-size: 22px;
+    font-size: 20px;
     color: $brand-color;
 
     b, strong {
@@ -124,7 +124,7 @@ a {
     }
 
     * {
-        font-size: 22px;
+        font-size: 20px;
     }
 }
 
@@ -138,10 +138,10 @@ a {
     }
 
     .section-subheading {
-        font-size: 20px;
+        font-size: 18px;
 
         * {
-            font-size: 20px;
+            font-size: 18px;
         }
     }
 }
@@ -219,10 +219,10 @@ a {
     }
 
     .section-subheading {
-        font-size: 18px;
+        font-size: 16px;
 
         * {
-            font-size: 18px;
+            font-size: 16px;
         }
     }
 }
