@@ -1,0 +1,62 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the single people page.
+// -----------------------------------------------------------------------------
+
+.page-single-people .page-content {
+    .featured-image {
+        padding-top: 0;
+        margin-bottom: 30px;
+
+        img {
+            max-width: 600px;
+            max-height: 500px;
+            -webkit-mask-image: url(../assets/images/blob-1.png);
+            mask-image: url(../assets/images/blob-1.png);
+            mask-size: 100% 100%;
+        }
+    }
+
+    .section-heading {
+        text-align: center;
+
+        // & + .position,
+        // & + .location {
+           
+        // }
+    }
+
+    .position,
+    .location {
+        text-align: center;
+        color: $brand-color;
+    }
+
+    @media (max-width: 1199px) {
+        .featured-image img {
+            max-width: 500px;
+            max-height: 400px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        padding: 50px 20px;
+
+        .featured-image img {
+            max-width: 400px;
+            max-height: 300px;
+        }
+    }
+    
+    @media (max-width: 767px) {
+        padding: 50px 10px;
+
+        .featured-image {
+            img {
+                max-width: 250px;
+                max-height: 250px;
+            }
+        }
+    }
+}

@@ -252,18 +252,36 @@
         margin-right: auto;
     }
 
+    .image-link {
+        display: flex;
+        align-items: flex-end;
+        height: 270px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
     .text-holder {
         text-align: center;
     }
 
     .name {
+        display: flex;
+        width: fit-content;
         margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
         font-family: $font-kumbhsans-medium;
         font-size: 22px;
         color: $brand-color;
+
+        &:hover {
+            color: $secondary-color;
+            cursor: pointer;
+        }
     }
 
     .position {
+        padding: 0 10px;
         margin: 0;
         font-size: 16px;
         color: $brand-color;
@@ -385,8 +403,18 @@
                     }
                 }
 
-                .quote-details span:first-child::before {
-                    background-color: $white;
+                .quote-details {
+                    span:first-child::before {
+                        background-color: $white;
+                    }
+
+                    .name-link {
+                        color: $white;
+
+                        &:hover {
+                            color: $secondary-color;
+                        }
+                    }
                 }
             }
         }
@@ -511,6 +539,16 @@
                         }
                     }
                 }
+
+                .name-link {
+                    color: $brand-color;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $secondary-color;
+                        text-decoration: none;
+                    }
+                }
             }
         }
     
@@ -522,6 +560,13 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+            }
+
+            .image-link {
+                display: flex;
+                justify-content: center;
+                text-decoration: none;
+                cursor: pointer;
             }
 
             .blob {
@@ -615,6 +660,10 @@
             max-height: 220px;
         }
 
+        .image-link {
+            height: 220px;
+        }
+
         .name {
             font-size: 20px;
         }
@@ -661,6 +710,10 @@
         .slider-image {
             max-width: 180px;
             max-height: 180px;
+        }
+
+        .image-link {
+            height: 180px;
         }
 
         .name {
