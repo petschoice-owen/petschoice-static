@@ -219,6 +219,14 @@
         }
     }
 
+    @media (min-width: 768px) and (max-width: 991px) {
+        .wrapper-image {
+            .section-image {
+                width: 100%;
+            }
+        }
+    }
+
     @media (max-width: 767px) {
         .alternate-item {
             padding: 60px 0;
