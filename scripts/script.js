@@ -202,6 +202,13 @@ var customSlider = () => {
                 },
             ]
         });
+
+        $('.slider-brand-logos .slide-item .link').each(function() {
+            var href = $(this).attr('href');
+            if (href == "#" || href == "") {
+                $(this).css('pointer-events', 'none');
+            }
+        });
     }
 }
 

@@ -255,6 +255,9 @@
     .image-link {
         display: flex;
         align-items: flex-end;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
         height: 270px;
         text-decoration: none;
         cursor: pointer;
