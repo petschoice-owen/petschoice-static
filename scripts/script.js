@@ -158,6 +158,13 @@ var customSlider = () => {
                 // }
             ]
         });
+
+        $('.slider-brand-products .slide-item .product-link').each(function() {
+            var href = $(this).attr('href');
+            if (href.indexOf('/') === -1) {
+                $(this).css('pointer-events', 'none');
+            }
+        });
     }
     if ($(".slider-brand-logos")) {
         $('.slider-brand-logos').slick({
